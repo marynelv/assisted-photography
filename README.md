@@ -1,4 +1,4 @@
 assisted-photography
 ====================
 
-Assisted photography application
+Assisted photography application. Will be available soon.
