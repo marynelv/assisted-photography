@@ -52,7 +52,7 @@
         DebugLog(@"%@", [error localizedFailureReason]); 
         DebugLog(@"%@", [error localizedRecoverySuggestion]); 
         DebugLog(@"%@", [error localizedRecoveryOptions]);
-        [DLLog appendString:[NSString stringWithFormat:@"%f - Error code %d: %@\n", timestamp, [error code], [error localizedDescription]] 
+        [DLLog appendString:[NSString stringWithFormat:@"%f - Error code %ld: %@\n", timestamp, (long)[error code], [error localizedDescription]]
                  encoding:NSUTF8StringEncoding fileHandle:self.fileHandle];
         return NO;
     }
