@@ -1,0 +1,1993 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		FEAFADBF14604ED000207F22 /* Build Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FEAFADC014604ED000207F22 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */;
+			buildPhases = (
+				FEAFADC314604ED400207F22 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build Aggregate";
+			productName = "Build Aggregate";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F602164C1500133E00E3B683 /* ImageBlurriness.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F602164B1500133E00E3B683 /* ImageBlurriness.cpp */; };
+		F602164F1500137300E3B683 /* ImageBlurriness.h in Headers */ = {isa = PBXBuildFile; fileRef = F602164E1500137200E3B683 /* ImageBlurriness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F60216501500222A00E3B683 /* ImageBlurriness.h in Headers */ = {isa = PBXBuildFile; fileRef = F602164E1500137200E3B683 /* ImageBlurriness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F60216511500223100E3B683 /* ImageMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1922191488EB59009714E4 /* ImageMotion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F60216521500223D00E3B683 /* ImageMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE19221B1488EB6D009714E4 /* ImageMotion.cpp */; };
+		F60216531500224000E3B683 /* ImageBlurriness.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F602164B1500133E00E3B683 /* ImageBlurriness.cpp */; };
+		F60216861500266C00E3B683 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F60216841500266C00E3B683 /* InfoPlist.strings */; };
+		F60216881500266C00E3B683 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F60216871500266C00E3B683 /* main.m */; };
+		F602168C1500266C00E3B683 /* SBAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F602168B1500266C00E3B683 /* SBAppDelegate.mm */; };
+		F602168F1500266C00E3B683 /* SBViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F602168E1500266C00E3B683 /* SBViewController.mm */; };
+		F60216921500266C00E3B683 /* SBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60216901500266C00E3B683 /* SBViewController.xib */; };
+		F60216AD150028B200E3B683 /* RenderView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F60216AC150028B200E3B683 /* RenderView.mm */; };
+		F60216B0150028DF00E3B683 /* GLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		F60216B1150028DF00E3B683 /* DataLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE093E0A1466D0AB008630E9 /* DataLogging.framework */; };
+		F60216B4150028DF00E3B683 /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFEE6AE1460BDBC00B3CCF6 /* BasicMath.framework */; };
+		F60216B8150028DF00E3B683 /* See.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADED14605F5600207F22 /* See.framework */; };
+		F60216BB150028DF00E3B683 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADA614604DD300207F22 /* CoreFoundation.framework */; };
+		F60673F118A7EF1500E830A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F018A7EF1500E830A3 /* AVFoundation.framework */; };
+		F60673F318A7EF1D00E830A3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F218A7EF1D00E830A3 /* CoreMedia.framework */; };
+		F60673F518A7EF2600E830A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F418A7EF2600E830A3 /* UIKit.framework */; };
+		F60673F718A7EF2E00E830A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F618A7EF2E00E830A3 /* Foundation.framework */; };
+		F60673F918A7EF3500E830A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F818A7EF3500E830A3 /* CoreGraphics.framework */; };
+		F60673FB18A7EF3C00E830A3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FA18A7EF3C00E830A3 /* AssetsLibrary.framework */; };
+		F60673FD18A7EF4200E830A3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FC18A7EF4200E830A3 /* CoreVideo.framework */; };
+		F60673FF18A7EF4700E830A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FE18A7EF4700E830A3 /* QuartzCore.framework */; };
+		F606740118A7EF4D00E830A3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740018A7EF4D00E830A3 /* Accelerate.framework */; };
+		F606740318A7EF5300E830A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740218A7EF5300E830A3 /* OpenGLES.framework */; };
+		F606740518A7EF5900E830A3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740418A7EF5900E830A3 /* MobileCoreServices.framework */; };
+		F606740718A7EF5F00E830A3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740618A7EF5F00E830A3 /* ImageIO.framework */; };
+		F606741718A7F5C300E830A3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FA18A7EF3C00E830A3 /* AssetsLibrary.framework */; };
+		F606741818A7F5CC00E830A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F018A7EF1500E830A3 /* AVFoundation.framework */; };
+		F606741918A7F61000E830A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F418A7EF2600E830A3 /* UIKit.framework */; };
+		F606741A18A7F61700E830A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740218A7EF5300E830A3 /* OpenGLES.framework */; };
+		F606741B18A7F67700E830A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F818A7EF3500E830A3 /* CoreGraphics.framework */; };
+		F606741C18A7F74700E830A3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740618A7EF5F00E830A3 /* ImageIO.framework */; };
+		F606741D18A7F74D00E830A3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740018A7EF4D00E830A3 /* Accelerate.framework */; };
+		F606741E18A7F7C900E830A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FE18A7EF4700E830A3 /* QuartzCore.framework */; };
+		F606741F18A7F80100E830A3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740418A7EF5900E830A3 /* MobileCoreServices.framework */; };
+		F606742018A7F80D00E830A3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FC18A7EF4200E830A3 /* CoreVideo.framework */; };
+		F606742118A7F84C00E830A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F618A7EF2E00E830A3 /* Foundation.framework */; };
+		F606742218A7F85100E830A3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F218A7EF1D00E830A3 /* CoreMedia.framework */; };
+		F606742918A8024200E830A3 /* DataLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE093E0A1466D0AB008630E9 /* DataLogging.framework */; };
+		F606742E18A8099300E830A3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F606742D18A8099300E830A3 /* libstdc++.6.0.9.dylib */; };
+		F606743018A80B9200E830A3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740618A7EF5F00E830A3 /* ImageIO.framework */; };
+		F606743118A80B9400E830A3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740418A7EF5900E830A3 /* MobileCoreServices.framework */; };
+		F606743218A80B9600E830A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740218A7EF5300E830A3 /* OpenGLES.framework */; };
+		F606743318A80B9900E830A3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740018A7EF4D00E830A3 /* Accelerate.framework */; };
+		F606743418A80B9A00E830A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FE18A7EF4700E830A3 /* QuartzCore.framework */; };
+		F606743518A80B9C00E830A3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FC18A7EF4200E830A3 /* CoreVideo.framework */; };
+		F606743618A80B9E00E830A3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FA18A7EF3C00E830A3 /* AssetsLibrary.framework */; };
+		F606743718A80BA000E830A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F818A7EF3500E830A3 /* CoreGraphics.framework */; };
+		F606743818A80BA200E830A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F618A7EF2E00E830A3 /* Foundation.framework */; };
+		F606743918A80BA500E830A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F418A7EF2600E830A3 /* UIKit.framework */; };
+		F606743A18A80BA700E830A3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F218A7EF1D00E830A3 /* CoreMedia.framework */; };
+		F606743B18A80BAC00E830A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F018A7EF1500E830A3 /* AVFoundation.framework */; };
+		F606744418A80D4A00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F606742D18A8099300E830A3 /* libstdc++.6.0.9.dylib */; };
+		F606744718A8152600E830A3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740618A7EF5F00E830A3 /* ImageIO.framework */; };
+		F606744818A8152600E830A3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740418A7EF5900E830A3 /* MobileCoreServices.framework */; };
+		F606744918A8152600E830A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740218A7EF5300E830A3 /* OpenGLES.framework */; };
+		F606744A18A8152600E830A3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740018A7EF4D00E830A3 /* Accelerate.framework */; };
+		F606744B18A8152600E830A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FE18A7EF4700E830A3 /* QuartzCore.framework */; };
+		F606744C18A8152600E830A3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FC18A7EF4200E830A3 /* CoreVideo.framework */; };
+		F606744D18A8152600E830A3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FA18A7EF3C00E830A3 /* AssetsLibrary.framework */; };
+		F606744E18A8152600E830A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F818A7EF3500E830A3 /* CoreGraphics.framework */; };
+		F606744F18A8152600E830A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F618A7EF2E00E830A3 /* Foundation.framework */; };
+		F606745018A8152600E830A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F418A7EF2600E830A3 /* UIKit.framework */; };
+		F606745118A8152600E830A3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F218A7EF1D00E830A3 /* CoreMedia.framework */; };
+		F606745218A8152600E830A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F018A7EF1500E830A3 /* AVFoundation.framework */; };
+		F606745318A8156E00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F606742D18A8099300E830A3 /* libstdc++.6.0.9.dylib */; };
+		F606745418A8165C00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F606742D18A8099300E830A3 /* libstdc++.6.0.9.dylib */; };
+		F606745518A8169500E830A3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740618A7EF5F00E830A3 /* ImageIO.framework */; };
+		F606745618A8169500E830A3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740418A7EF5900E830A3 /* MobileCoreServices.framework */; };
+		F606745718A8169500E830A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740218A7EF5300E830A3 /* OpenGLES.framework */; };
+		F606745818A8169500E830A3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740018A7EF4D00E830A3 /* Accelerate.framework */; };
+		F606745918A8169500E830A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FE18A7EF4700E830A3 /* QuartzCore.framework */; };
+		F606745A18A8169500E830A3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FC18A7EF4200E830A3 /* CoreVideo.framework */; };
+		F606745B18A8169500E830A3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FA18A7EF3C00E830A3 /* AssetsLibrary.framework */; };
+		F606745C18A8169500E830A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F818A7EF3500E830A3 /* CoreGraphics.framework */; };
+		F606745D18A8169500E830A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F618A7EF2E00E830A3 /* Foundation.framework */; };
+		F606745E18A8169500E830A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F418A7EF2600E830A3 /* UIKit.framework */; };
+		F606745F18A8169500E830A3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F218A7EF1D00E830A3 /* CoreMedia.framework */; };
+		F606746018A8169500E830A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F018A7EF1500E830A3 /* AVFoundation.framework */; };
+		F606746118A8174E00E830A3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740618A7EF5F00E830A3 /* ImageIO.framework */; };
+		F606746218A8174E00E830A3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740418A7EF5900E830A3 /* MobileCoreServices.framework */; };
+		F606746318A8174E00E830A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740218A7EF5300E830A3 /* OpenGLES.framework */; };
+		F606746418A8174E00E830A3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F606740018A7EF4D00E830A3 /* Accelerate.framework */; };
+		F606746518A8174E00E830A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FE18A7EF4700E830A3 /* QuartzCore.framework */; };
+		F606746618A8174E00E830A3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FC18A7EF4200E830A3 /* CoreVideo.framework */; };
+		F606746718A8174E00E830A3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673FA18A7EF3C00E830A3 /* AssetsLibrary.framework */; };
+		F606746818A8174E00E830A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F818A7EF3500E830A3 /* CoreGraphics.framework */; };
+		F606746918A8174E00E830A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F618A7EF2E00E830A3 /* Foundation.framework */; };
+		F606746A18A8174E00E830A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F418A7EF2600E830A3 /* UIKit.framework */; };
+		F606746B18A8174E00E830A3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F218A7EF1D00E830A3 /* CoreMedia.framework */; };
+		F606746C18A8174E00E830A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673F018A7EF1500E830A3 /* AVFoundation.framework */; };
+		F606746D18A8182200E830A3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F606742D18A8099300E830A3 /* libstdc++.6.0.9.dylib */; };
+		F6437F2815013DA500EE1589 /* GLVision.framework in Resources */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		F6437F2B1501443200EE1589 /* BlurryBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F6437F2A1501443100EE1589 /* BlurryBar.m */; };
+		F646FD0214F5E18F00D2D7FE /* SeeCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFADC41460501200207F22 /* SeeCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F646FD0314F5E1A000D2D7FE /* ImageConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD9614604DBD00207F22 /* ImageConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F646FD0414F5E1A200D2D7FE /* ImageConversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD9714604DBD00207F22 /* ImageConversion.cpp */; };
+		F646FD0514F5E1AA00D2D7FE /* ImageSaliency.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD9814604DBD00207F22 /* ImageSaliency.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F646FD0614F5E1AC00D2D7FE /* ImageSaliency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD9914604DBD00207F22 /* ImageSaliency.cpp */; };
+		F646FD0714F5E1AF00D2D7FE /* ImageSegmentation.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD9A14604DBD00207F22 /* ImageSegmentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F646FD0814F5E1B300D2D7FE /* ImageSegmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD9B14604DBD00207F22 /* ImageSegmentation.cpp */; };
+		F646FD0914F5E1E200D2D7FE /* ImageTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD9E14604DBD00207F22 /* ImageTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F64EFF171651CC4500C0D1CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64EFF161651CC4500C0D1CC /* Default-568h@2x.png */; };
+		F64EFF241651CCA300C0D1CC /* GLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		F64EFF251651CCA300C0D1CC /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFEE6AE1460BDBC00B3CCF6 /* BasicMath.framework */; };
+		F64EFF261651CCA300C0D1CC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADA614604DD300207F22 /* CoreFoundation.framework */; };
+		F64EFF331651CD5E00C0D1CC /* GLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		F64EFF341651CD5E00C0D1CC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADA614604DD300207F22 /* CoreFoundation.framework */; };
+		F684989514C86EE300E669E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F684989314C86EE300E669E2 /* InfoPlist.strings */; };
+		F684989714C86EE300E669E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F684989614C86EE300E669E2 /* main.m */; };
+		F684989B14C86EE300E669E2 /* SFRAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F684989A14C86EE300E669E2 /* SFRAppDelegate.mm */; };
+		F68498A114C86F4000E669E2 /* SFRViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F68498A014C86F4000E669E2 /* SFRViewController.mm */; };
+		F68498A414C8A8B800E669E2 /* GLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		F68498A514C8A8B800E669E2 /* DataLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE093E0A1466D0AB008630E9 /* DataLogging.framework */; };
+		F68498A814C8A8B800E669E2 /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFEE6AE1460BDBC00B3CCF6 /* BasicMath.framework */; };
+		F68498AC14C8A8B800E669E2 /* See.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADED14605F5600207F22 /* See.framework */; };
+		F68498AF14C8A8B800E669E2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADA614604DD300207F22 /* CoreFoundation.framework */; };
+		F68498B514C8AE0600E669E2 /* GLVViewCam+Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = F68498B414C8AE0600E669E2 /* GLVViewCam+Render.mm */; };
+		F68498BA14C8B0F400E669E2 /* SFRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68498B914C8B0F400E669E2 /* SFRViewController.xib */; };
+		F68498BB14C8B25000E669E2 /* GLVision.framework in Resources */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		F6AA1E6318A88A4A0016B107 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64EFF161651CC4500C0D1CC /* Default-568h@2x.png */; };
+		F6EEC02314FCF870002E6C76 /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFEE6AE1460BDBC00B3CCF6 /* BasicMath.framework */; };
+		FE093E0D1466D249008630E9 /* DataLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE093E0A1466D0AB008630E9 /* DataLogging.framework */; };
+		FE19221C1488EB6D009714E4 /* ImageMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE19221B1488EB6D009714E4 /* ImageMotion.cpp */; };
+		FE19221D1488EBBC009714E4 /* ImageMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1922191488EB59009714E4 /* ImageMotion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE192237148E5BD8009714E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE192235148E5BD8009714E4 /* InfoPlist.strings */; };
+		FE192239148E5BD8009714E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE192238148E5BD8009714E4 /* main.m */; };
+		FE19223D148E5BD8009714E4 /* SeeTemplateTrackingAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE19223C148E5BD8009714E4 /* SeeTemplateTrackingAppDelegate.mm */; };
+		FE192240148E5BD8009714E4 /* SeeTemplateTrackingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE19223F148E5BD8009714E4 /* SeeTemplateTrackingViewController.mm */; };
+		FE192243148E5BD8009714E4 /* SeeTemplateTrackingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE192241148E5BD8009714E4 /* SeeTemplateTrackingViewController.xib */; };
+		FE192249148E5C05009714E4 /* GLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		FE19224A148E5C0D009714E4 /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFEE6AE1460BDBC00B3CCF6 /* BasicMath.framework */; };
+		FE19224B148E5C15009714E4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADA614604DD300207F22 /* CoreFoundation.framework */; };
+		FE19224E148E5C1C009714E4 /* See.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADED14605F5600207F22 /* See.framework */; };
+		FEAA4BD9148E701D0081747F /* RenderView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEAA4BD8148E701D0081747F /* RenderView.mm */; };
+		FEAA4BDB148E76D30081747F /* DataLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE093E0A1466D0AB008630E9 /* DataLogging.framework */; };
+		FEAA4BDC148E77110081747F /* GLVision.framework in Resources */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		FEAFADB214604DF200207F22 /* ImageConversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD9714604DBD00207F22 /* ImageConversion.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FEAFADB314604DF200207F22 /* ImageSaliency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD9914604DBD00207F22 /* ImageSaliency.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FEAFADB414604DF200207F22 /* ImageSegmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD9B14604DBD00207F22 /* ImageSegmentation.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FEAFADB514604DF200207F22 /* ImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD9D14604DBD00207F22 /* ImageSource.m */; };
+		FEAFADB714604E0300207F22 /* ImageConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD9614604DBD00207F22 /* ImageConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEAFADB814604E0300207F22 /* ImageSaliency.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD9814604DBD00207F22 /* ImageSaliency.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEAFADB914604E0300207F22 /* ImageSegmentation.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD9A14604DBD00207F22 /* ImageSegmentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEAFADBA14604E0300207F22 /* ImageSource.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD9C14604DBD00207F22 /* ImageSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEAFADBB14604E0300207F22 /* ImageTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD9E14604DBD00207F22 /* ImageTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEAFADC51460501200207F22 /* SeeCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFADC41460501200207F22 /* SeeCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEAFADD714605EEC00207F22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEAFADD514605EEC00207F22 /* InfoPlist.strings */; };
+		FEAFADD914605EEC00207F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAFADD814605EEC00207F22 /* main.m */; };
+		FEAFADDD14605EEC00207F22 /* SeeTestCameraAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAFADDC14605EEC00207F22 /* SeeTestCameraAppDelegate.m */; };
+		FEAFADE014605EEC00207F22 /* SeeTestCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEAFADDF14605EEC00207F22 /* SeeTestCameraViewController.mm */; };
+		FEAFADE314605EEC00207F22 /* SeeTestCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEAFADE114605EEC00207F22 /* SeeTestCameraViewController.xib */; };
+		FEAFADEE14605F5600207F22 /* See.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADED14605F5600207F22 /* See.framework */; };
+		FECE100C146995EA00B7C394 /* GLVision.framework in Resources */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		FECE100F1469975B00B7C394 /* DataLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE093E0A1466D0AB008630E9 /* DataLogging.framework */; };
+		FECE10121469975B00B7C394 /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFEE6AE1460BDBC00B3CCF6 /* BasicMath.framework */; };
+		FECE10191469975B00B7C394 /* See.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADED14605F5600207F22 /* See.framework */; };
+		FECE101C1469975B00B7C394 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADA614604DD300207F22 /* CoreFoundation.framework */; };
+		FECE10231469986800B7C394 /* GLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE100A1469957100B7C394 /* GLVision.framework */; };
+		FEFEE6521460B3E600B3CCF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFEE6501460B3E600B3CCF6 /* InfoPlist.strings */; };
+		FEFEE6541460B3E600B3CCF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFEE6531460B3E600B3CCF6 /* main.m */; };
+		FEFEE6581460B3E600B3CCF6 /* SeeTestSaliencyAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEFEE6571460B3E600B3CCF6 /* SeeTestSaliencyAppDelegate.mm */; };
+		FEFEE65B1460B3E600B3CCF6 /* SeeTestSaliencyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEFEE65A1460B3E600B3CCF6 /* SeeTestSaliencyViewController.mm */; };
+		FEFEE65E1460B3E600B3CCF6 /* SeeTestSaliencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEFEE65C1460B3E600B3CCF6 /* SeeTestSaliencyViewController.xib */; };
+		FEFEE6731460B59C00B3CCF6 /* SeeTestSaliencyViewController+FileHandling.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEFEE6631460B40400B3CCF6 /* SeeTestSaliencyViewController+FileHandling.mm */; };
+		FEFEE6AD1460B9BD00B3CCF6 /* RenderView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEFEE6AC1460B9BD00B3CCF6 /* RenderView.mm */; };
+		FEFFB5351472E949000E42BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFFB5331472E949000E42BC /* InfoPlist.strings */; };
+		FEFFB5371472E949000E42BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFFB5361472E949000E42BC /* main.m */; };
+		FEFFB53B1472E949000E42BC /* SeeTestPyramidAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEFFB53A1472E949000E42BC /* SeeTestPyramidAppDelegate.mm */; };
+		FEFFB53E1472E949000E42BC /* SeeTestPyramidViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEFFB53D1472E949000E42BC /* SeeTestPyramidViewController.mm */; };
+		FEFFB5411472E94A000E42BC /* SeeTestPyramidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEFFB53F1472E94A000E42BC /* SeeTestPyramidViewController.xib */; };
+		FEFFB54C1472F491000E42BC /* See.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFADED14605F5600207F22 /* See.framework */; };
+		FEFFB558147341A4000E42BC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFFB557147341A4000E42BC /* icon.png */; };
+		FEFFB55A147342D4000E42BC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFFB559147342D4000E42BC /* icon.png */; };
+		FEFFB565147343B3000E42BC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFFB56114734394000E42BC /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6437F2C150167DC00EE1589 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEAFAD8E14604D6C00207F22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEAFADBF14604ED000207F22;
+			remoteInfo = "Build Aggregate";
+		};
+		FE192247148E5BF7009714E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEAFAD8E14604D6C00207F22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEAFADBF14604ED000207F22;
+			remoteInfo = "Build Aggregate";
+		};
+		FEAFADE714605F1600207F22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEAFAD8E14604D6C00207F22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEAFADBF14604ED000207F22;
+			remoteInfo = "Build Aggregate";
+		};
+		FEFEE6B51460D58300B3CCF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEAFAD8E14604D6C00207F22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEAFADBF14604ED000207F22;
+			remoteInfo = "Build Aggregate";
+		};
+		FEFFB55214730CDE000E42BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEAFAD8E14604D6C00207F22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEAFADBF14604ED000207F22;
+			remoteInfo = "Build Aggregate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F602164B1500133E00E3B683 /* ImageBlurriness.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageBlurriness.cpp; sourceTree = "<group>"; };
+		F602164E1500137200E3B683 /* ImageBlurriness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBlurriness.h; sourceTree = "<group>"; };
+		F60216771500263F00E3B683 /* SeeTemplateTracking copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SeeTemplateTracking copy-Info.plist"; path = "/Users/marynelv/Documents/Repos/RERC-APT/code/frameworks/projects/Framework-See/SeeTemplateTracking copy-Info.plist"; sourceTree = "<absolute>"; };
+		F602167C1500266C00E3B683 /* SeeBlurry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeBlurry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60216831500266C00E3B683 /* SeeBlurry-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SeeBlurry-Info.plist"; sourceTree = "<group>"; };
+		F60216851500266C00E3B683 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F60216871500266C00E3B683 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F60216891500266C00E3B683 /* SeeBlurry-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeeBlurry-Prefix.pch"; sourceTree = "<group>"; };
+		F602168A1500266C00E3B683 /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
+		F602168B1500266C00E3B683 /* SBAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SBAppDelegate.mm; sourceTree = "<group>"; };
+		F602168D1500266C00E3B683 /* SBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
+		F602168E1500266C00E3B683 /* SBViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SBViewController.mm; sourceTree = "<group>"; };
+		F60216911500266C00E3B683 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SBViewController.xib; sourceTree = "<group>"; };
+		F60216AB150028B200E3B683 /* RenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderView.h; sourceTree = "<group>"; };
+		F60216AC150028B200E3B683 /* RenderView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RenderView.mm; sourceTree = "<group>"; };
+		F60673F018A7EF1500E830A3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F60673F218A7EF1D00E830A3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		F60673F418A7EF2600E830A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F60673F618A7EF2E00E830A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F60673F818A7EF3500E830A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		F60673FA18A7EF3C00E830A3 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		F60673FC18A7EF4200E830A3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		F60673FE18A7EF4700E830A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		F606740018A7EF4D00E830A3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		F606740218A7EF5300E830A3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		F606740418A7EF5900E830A3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		F606740618A7EF5F00E830A3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		F606742D18A8099300E830A3 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libstdc++.6.0.9.dylib"; sourceTree = DEVELOPER_DIR; };
+		F606743D18A80C3200E830A3 /* AudioFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioFeedback.framework; sourceTree = "<group>"; };
+		F606743E18A80C3200E830A3 /* BasicMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BasicMath.framework; sourceTree = "<group>"; };
+		F606743F18A80C3200E830A3 /* DataLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DataLogging.framework; sourceTree = "<group>"; };
+		F606744018A80C3200E830A3 /* GLVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GLVision.framework; sourceTree = "<group>"; };
+		F606744118A80C3200E830A3 /* OIBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OIBridge.framework; sourceTree = "<group>"; };
+		F606744218A80C3200E830A3 /* OpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenCV.framework; sourceTree = "<group>"; };
+		F606744318A80C3200E830A3 /* See.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = See.framework; sourceTree = "<group>"; };
+		F6437F291501443100EE1589 /* BlurryBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurryBar.h; sourceTree = "<group>"; };
+		F6437F2A1501443100EE1589 /* BlurryBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurryBar.m; sourceTree = "<group>"; };
+		F646FCFD14F5E18000D2D7FE /* libsee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsee.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64EFF161651CC4500C0D1CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F684988B14C86EE300E669E2 /* SeeFrameRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeFrameRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F684989214C86EE300E669E2 /* SeeFrameRecording-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SeeFrameRecording-Info.plist"; sourceTree = "<group>"; };
+		F684989414C86EE300E669E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F684989614C86EE300E669E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F684989814C86EE300E669E2 /* SeeFrameRecording-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeeFrameRecording-Prefix.pch"; sourceTree = "<group>"; };
+		F684989914C86EE300E669E2 /* SFRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFRAppDelegate.h; sourceTree = "<group>"; };
+		F684989A14C86EE300E669E2 /* SFRAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SFRAppDelegate.mm; sourceTree = "<group>"; };
+		F684989F14C86F4000E669E2 /* SFRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRViewController.h; sourceTree = "<group>"; };
+		F68498A014C86F4000E669E2 /* SFRViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SFRViewController.mm; sourceTree = "<group>"; };
+		F68498B314C8AE0600E669E2 /* GLVViewCam+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLVViewCam+Render.h"; sourceTree = "<group>"; };
+		F68498B414C8AE0600E669E2 /* GLVViewCam+Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLVViewCam+Render.mm"; sourceTree = "<group>"; };
+		F68498B914C8B0F400E669E2 /* SFRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFRViewController.xib; sourceTree = "<group>"; };
+		FE093E0A1466D0AB008630E9 /* DataLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DataLogging.framework; path = ../../frameworks/DataLogging.framework; sourceTree = "<group>"; };
+		FE1922191488EB59009714E4 /* ImageMotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageMotion.h; sourceTree = "<group>"; };
+		FE19221B1488EB6D009714E4 /* ImageMotion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageMotion.cpp; sourceTree = "<group>"; };
+		FE19222D148E5BD7009714E4 /* SeeTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE192234148E5BD8009714E4 /* SeeTemplateTracking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SeeTemplateTracking-Info.plist"; sourceTree = "<group>"; };
+		FE192236148E5BD8009714E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE192238148E5BD8009714E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE19223A148E5BD8009714E4 /* SeeTemplateTracking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeeTemplateTracking-Prefix.pch"; sourceTree = "<group>"; };
+		FE19223B148E5BD8009714E4 /* SeeTemplateTrackingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTemplateTrackingAppDelegate.h; sourceTree = "<group>"; };
+		FE19223C148E5BD8009714E4 /* SeeTemplateTrackingAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SeeTemplateTrackingAppDelegate.mm; sourceTree = "<group>"; };
+		FE19223E148E5BD8009714E4 /* SeeTemplateTrackingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTemplateTrackingViewController.h; sourceTree = "<group>"; };
+		FE19223F148E5BD8009714E4 /* SeeTemplateTrackingViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SeeTemplateTrackingViewController.mm; sourceTree = "<group>"; };
+		FE192242148E5BD8009714E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SeeTemplateTrackingViewController.xib; sourceTree = "<group>"; };
+		FEAA4BD7148E701D0081747F /* RenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderView.h; sourceTree = "<group>"; };
+		FEAA4BD8148E701D0081747F /* RenderView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RenderView.mm; sourceTree = "<group>"; };
+		FEAFAD9614604DBD00207F22 /* ImageConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageConversion.h; sourceTree = "<group>"; };
+		FEAFAD9714604DBD00207F22 /* ImageConversion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = ImageConversion.cpp; sourceTree = "<group>"; };
+		FEAFAD9814604DBD00207F22 /* ImageSaliency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageSaliency.h; sourceTree = "<group>"; };
+		FEAFAD9914604DBD00207F22 /* ImageSaliency.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = ImageSaliency.cpp; sourceTree = "<group>"; };
+		FEAFAD9A14604DBD00207F22 /* ImageSegmentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageSegmentation.h; sourceTree = "<group>"; };
+		FEAFAD9B14604DBD00207F22 /* ImageSegmentation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = ImageSegmentation.cpp; sourceTree = "<group>"; };
+		FEAFAD9C14604DBD00207F22 /* ImageSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageSource.h; sourceTree = "<group>"; };
+		FEAFAD9D14604DBD00207F22 /* ImageSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageSource.m; sourceTree = "<group>"; };
+		FEAFAD9E14604DBD00207F22 /* ImageTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTypes.h; sourceTree = "<group>"; };
+		FEAFADA314604DD300207F22 /* See.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = See.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEAFADA614604DD300207F22 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FEAFADAA14604DD300207F22 /* See-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "See-Info.plist"; sourceTree = "<group>"; };
+		FEAFADAC14604DD300207F22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEAFADAE14604DD300207F22 /* See-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "See-Prefix.pch"; sourceTree = "<group>"; };
+		FEAFADC41460501200207F22 /* SeeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeeCommon.h; sourceTree = "<group>"; };
+		FEAFADCA14605EEC00207F22 /* SeeCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEAFADD414605EEC00207F22 /* SeeTestCamera-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SeeTestCamera-Info.plist"; sourceTree = "<group>"; };
+		FEAFADD614605EEC00207F22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEAFADD814605EEC00207F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEAFADDA14605EEC00207F22 /* SeeTestCamera-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeeTestCamera-Prefix.pch"; sourceTree = "<group>"; };
+		FEAFADDB14605EEC00207F22 /* SeeTestCameraAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTestCameraAppDelegate.h; sourceTree = "<group>"; };
+		FEAFADDC14605EEC00207F22 /* SeeTestCameraAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeeTestCameraAppDelegate.m; sourceTree = "<group>"; };
+		FEAFADDE14605EEC00207F22 /* SeeTestCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTestCameraViewController.h; sourceTree = "<group>"; };
+		FEAFADDF14605EEC00207F22 /* SeeTestCameraViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SeeTestCameraViewController.mm; sourceTree = "<group>"; };
+		FEAFADE214605EEC00207F22 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SeeTestCameraViewController.xib; sourceTree = "<group>"; };
+		FEAFADED14605F5600207F22 /* See.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = See.framework; path = ../../frameworks/See.framework; sourceTree = "<group>"; };
+		FECE100A1469957100B7C394 /* GLVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLVision.framework; path = ../../frameworks/GLVision.framework; sourceTree = "<group>"; };
+		FEFEE6481460B3E600B3CCF6 /* SeeSaliency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeSaliency.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFEE64F1460B3E600B3CCF6 /* SeeTestSaliency-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SeeTestSaliency-Info.plist"; sourceTree = "<group>"; };
+		FEFEE6511460B3E600B3CCF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEFEE6531460B3E600B3CCF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEFEE6551460B3E600B3CCF6 /* SeeTestSaliency-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeeTestSaliency-Prefix.pch"; sourceTree = "<group>"; };
+		FEFEE6561460B3E600B3CCF6 /* SeeTestSaliencyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTestSaliencyAppDelegate.h; sourceTree = "<group>"; };
+		FEFEE6571460B3E600B3CCF6 /* SeeTestSaliencyAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SeeTestSaliencyAppDelegate.mm; sourceTree = "<group>"; };
+		FEFEE6591460B3E600B3CCF6 /* SeeTestSaliencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTestSaliencyViewController.h; sourceTree = "<group>"; };
+		FEFEE65A1460B3E600B3CCF6 /* SeeTestSaliencyViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SeeTestSaliencyViewController.mm; sourceTree = "<group>"; };
+		FEFEE65D1460B3E600B3CCF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SeeTestSaliencyViewController.xib; sourceTree = "<group>"; };
+		FEFEE6621460B40400B3CCF6 /* SeeTestSaliencyViewController+FileHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SeeTestSaliencyViewController+FileHandling.h"; sourceTree = "<group>"; };
+		FEFEE6631460B40400B3CCF6 /* SeeTestSaliencyViewController+FileHandling.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SeeTestSaliencyViewController+FileHandling.mm"; sourceTree = "<group>"; };
+		FEFEE6AB1460B9BD00B3CCF6 /* RenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderView.h; sourceTree = "<group>"; };
+		FEFEE6AC1460B9BD00B3CCF6 /* RenderView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RenderView.mm; sourceTree = "<group>"; };
+		FEFEE6AE1460BDBC00B3CCF6 /* BasicMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BasicMath.framework; path = ../../frameworks/BasicMath.framework; sourceTree = "<group>"; };
+		FEFFB52B1472E949000E42BC /* SeePyramid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeePyramid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFFB5321472E949000E42BC /* SeeTestPyramid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SeeTestPyramid-Info.plist"; sourceTree = "<group>"; };
+		FEFFB5341472E949000E42BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEFFB5361472E949000E42BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEFFB5381472E949000E42BC /* SeeTestPyramid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeeTestPyramid-Prefix.pch"; sourceTree = "<group>"; };
+		FEFFB5391472E949000E42BC /* SeeTestPyramidAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTestPyramidAppDelegate.h; sourceTree = "<group>"; };
+		FEFFB53A1472E949000E42BC /* SeeTestPyramidAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SeeTestPyramidAppDelegate.mm; sourceTree = "<group>"; };
+		FEFFB53C1472E949000E42BC /* SeeTestPyramidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTestPyramidViewController.h; sourceTree = "<group>"; };
+		FEFFB53D1472E949000E42BC /* SeeTestPyramidViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SeeTestPyramidViewController.mm; sourceTree = "<group>"; };
+		FEFFB5401472E94A000E42BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SeeTestPyramidViewController.xib; sourceTree = "<group>"; };
+		FEFFB557147341A4000E42BC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FEFFB559147342D4000E42BC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FEFFB56114734394000E42BC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F60216791500266C00E3B683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F606746D18A8182200E830A3 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F606746118A8174E00E830A3 /* ImageIO.framework in Frameworks */,
+				F606746218A8174E00E830A3 /* MobileCoreServices.framework in Frameworks */,
+				F606746318A8174E00E830A3 /* OpenGLES.framework in Frameworks */,
+				F606746418A8174E00E830A3 /* Accelerate.framework in Frameworks */,
+				F606746518A8174E00E830A3 /* QuartzCore.framework in Frameworks */,
+				F606746618A8174E00E830A3 /* CoreVideo.framework in Frameworks */,
+				F606746718A8174E00E830A3 /* AssetsLibrary.framework in Frameworks */,
+				F606746818A8174E00E830A3 /* CoreGraphics.framework in Frameworks */,
+				F606746918A8174E00E830A3 /* Foundation.framework in Frameworks */,
+				F606746A18A8174E00E830A3 /* UIKit.framework in Frameworks */,
+				F606746B18A8174E00E830A3 /* CoreMedia.framework in Frameworks */,
+				F606746C18A8174E00E830A3 /* AVFoundation.framework in Frameworks */,
+				F60216B0150028DF00E3B683 /* GLVision.framework in Frameworks */,
+				F60216B1150028DF00E3B683 /* DataLogging.framework in Frameworks */,
+				F60216B4150028DF00E3B683 /* BasicMath.framework in Frameworks */,
+				F60216B8150028DF00E3B683 /* See.framework in Frameworks */,
+				F60216BB150028DF00E3B683 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F646FCFA14F5E18000D2D7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F684988814C86EE300E669E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F606745418A8165C00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F68498A414C8A8B800E669E2 /* GLVision.framework in Frameworks */,
+				F68498A514C8A8B800E669E2 /* DataLogging.framework in Frameworks */,
+				F68498A814C8A8B800E669E2 /* BasicMath.framework in Frameworks */,
+				F606745518A8169500E830A3 /* ImageIO.framework in Frameworks */,
+				F606745618A8169500E830A3 /* MobileCoreServices.framework in Frameworks */,
+				F606745718A8169500E830A3 /* OpenGLES.framework in Frameworks */,
+				F606745818A8169500E830A3 /* Accelerate.framework in Frameworks */,
+				F606745918A8169500E830A3 /* QuartzCore.framework in Frameworks */,
+				F606745A18A8169500E830A3 /* CoreVideo.framework in Frameworks */,
+				F606745B18A8169500E830A3 /* AssetsLibrary.framework in Frameworks */,
+				F606745C18A8169500E830A3 /* CoreGraphics.framework in Frameworks */,
+				F606745D18A8169500E830A3 /* Foundation.framework in Frameworks */,
+				F606745E18A8169500E830A3 /* UIKit.framework in Frameworks */,
+				F606745F18A8169500E830A3 /* CoreMedia.framework in Frameworks */,
+				F606746018A8169500E830A3 /* AVFoundation.framework in Frameworks */,
+				F68498AC14C8A8B800E669E2 /* See.framework in Frameworks */,
+				F68498AF14C8A8B800E669E2 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE19222A148E5BD7009714E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F606745318A8156E00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */,
+				FE192249148E5C05009714E4 /* GLVision.framework in Frameworks */,
+				F606744718A8152600E830A3 /* ImageIO.framework in Frameworks */,
+				F606744818A8152600E830A3 /* MobileCoreServices.framework in Frameworks */,
+				F606744918A8152600E830A3 /* OpenGLES.framework in Frameworks */,
+				F606744A18A8152600E830A3 /* Accelerate.framework in Frameworks */,
+				F606744B18A8152600E830A3 /* QuartzCore.framework in Frameworks */,
+				F606744C18A8152600E830A3 /* CoreVideo.framework in Frameworks */,
+				F606744D18A8152600E830A3 /* AssetsLibrary.framework in Frameworks */,
+				F606744E18A8152600E830A3 /* CoreGraphics.framework in Frameworks */,
+				F606744F18A8152600E830A3 /* Foundation.framework in Frameworks */,
+				F606745018A8152600E830A3 /* UIKit.framework in Frameworks */,
+				F606745118A8152600E830A3 /* CoreMedia.framework in Frameworks */,
+				F606745218A8152600E830A3 /* AVFoundation.framework in Frameworks */,
+				FEAA4BDB148E76D30081747F /* DataLogging.framework in Frameworks */,
+				FE19224A148E5C0D009714E4 /* BasicMath.framework in Frameworks */,
+				FE19224E148E5C1C009714E4 /* See.framework in Frameworks */,
+				FE19224B148E5C15009714E4 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFADA014604DD300207F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFADC714605EEC00207F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F606741F18A7F80100E830A3 /* MobileCoreServices.framework in Frameworks */,
+				F606741A18A7F61700E830A3 /* OpenGLES.framework in Frameworks */,
+				F606741918A7F61000E830A3 /* UIKit.framework in Frameworks */,
+				F606741718A7F5C300E830A3 /* AssetsLibrary.framework in Frameworks */,
+				F64EFF241651CCA300C0D1CC /* GLVision.framework in Frameworks */,
+				FE093E0D1466D249008630E9 /* DataLogging.framework in Frameworks */,
+				F606741C18A7F74700E830A3 /* ImageIO.framework in Frameworks */,
+				F606742118A7F84C00E830A3 /* Foundation.framework in Frameworks */,
+				F606741E18A7F7C900E830A3 /* QuartzCore.framework in Frameworks */,
+				F64EFF251651CCA300C0D1CC /* BasicMath.framework in Frameworks */,
+				F606741D18A7F74D00E830A3 /* Accelerate.framework in Frameworks */,
+				F606741818A7F5CC00E830A3 /* AVFoundation.framework in Frameworks */,
+				F606742018A7F80D00E830A3 /* CoreVideo.framework in Frameworks */,
+				F606742218A7F85100E830A3 /* CoreMedia.framework in Frameworks */,
+				FEAFADEE14605F5600207F22 /* See.framework in Frameworks */,
+				F606741B18A7F67700E830A3 /* CoreGraphics.framework in Frameworks */,
+				F64EFF261651CCA300C0D1CC /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFEE6451460B3E600B3CCF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F606744418A80D4A00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */,
+				FECE10231469986800B7C394 /* GLVision.framework in Frameworks */,
+				FECE100F1469975B00B7C394 /* DataLogging.framework in Frameworks */,
+				FECE10121469975B00B7C394 /* BasicMath.framework in Frameworks */,
+				F606743218A80B9600E830A3 /* OpenGLES.framework in Frameworks */,
+				F606743118A80B9400E830A3 /* MobileCoreServices.framework in Frameworks */,
+				F606743318A80B9900E830A3 /* Accelerate.framework in Frameworks */,
+				F606743418A80B9A00E830A3 /* QuartzCore.framework in Frameworks */,
+				F606743718A80BA000E830A3 /* CoreGraphics.framework in Frameworks */,
+				F606743818A80BA200E830A3 /* Foundation.framework in Frameworks */,
+				F606743018A80B9200E830A3 /* ImageIO.framework in Frameworks */,
+				F606743B18A80BAC00E830A3 /* AVFoundation.framework in Frameworks */,
+				F606743A18A80BA700E830A3 /* CoreMedia.framework in Frameworks */,
+				F606743918A80BA500E830A3 /* UIKit.framework in Frameworks */,
+				F606743618A80B9E00E830A3 /* AssetsLibrary.framework in Frameworks */,
+				F606743518A80B9C00E830A3 /* CoreVideo.framework in Frameworks */,
+				FECE101C1469975B00B7C394 /* CoreFoundation.framework in Frameworks */,
+				FECE10191469975B00B7C394 /* See.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFFB5281472E949000E42BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F606742E18A8099300E830A3 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F606742918A8024200E830A3 /* DataLogging.framework in Frameworks */,
+				F606740718A7EF5F00E830A3 /* ImageIO.framework in Frameworks */,
+				F606740518A7EF5900E830A3 /* MobileCoreServices.framework in Frameworks */,
+				F606740318A7EF5300E830A3 /* OpenGLES.framework in Frameworks */,
+				F606740118A7EF4D00E830A3 /* Accelerate.framework in Frameworks */,
+				F60673FF18A7EF4700E830A3 /* QuartzCore.framework in Frameworks */,
+				F60673FD18A7EF4200E830A3 /* CoreVideo.framework in Frameworks */,
+				F60673FB18A7EF3C00E830A3 /* AssetsLibrary.framework in Frameworks */,
+				F60673F918A7EF3500E830A3 /* CoreGraphics.framework in Frameworks */,
+				F60673F718A7EF2E00E830A3 /* Foundation.framework in Frameworks */,
+				F60673F518A7EF2600E830A3 /* UIKit.framework in Frameworks */,
+				F60673F318A7EF1D00E830A3 /* CoreMedia.framework in Frameworks */,
+				F60673F118A7EF1500E830A3 /* AVFoundation.framework in Frameworks */,
+				F64EFF331651CD5E00C0D1CC /* GLVision.framework in Frameworks */,
+				F6EEC02314FCF870002E6C76 /* BasicMath.framework in Frameworks */,
+				F64EFF341651CD5E00C0D1CC /* CoreFoundation.framework in Frameworks */,
+				FEFFB54C1472F491000E42BC /* See.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F60216811500266C00E3B683 /* SeeBlurry */ = {
+			isa = PBXGroup;
+			children = (
+				F602168A1500266C00E3B683 /* SBAppDelegate.h */,
+				F602168B1500266C00E3B683 /* SBAppDelegate.mm */,
+				F602168D1500266C00E3B683 /* SBViewController.h */,
+				F602168E1500266C00E3B683 /* SBViewController.mm */,
+				F60216AB150028B200E3B683 /* RenderView.h */,
+				F60216AC150028B200E3B683 /* RenderView.mm */,
+				F6437F291501443100EE1589 /* BlurryBar.h */,
+				F6437F2A1501443100EE1589 /* BlurryBar.m */,
+				F60216901500266C00E3B683 /* SBViewController.xib */,
+				F60216821500266C00E3B683 /* Supporting Files */,
+			);
+			path = SeeBlurry;
+			sourceTree = "<group>";
+		};
+		F60216821500266C00E3B683 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F60216831500266C00E3B683 /* SeeBlurry-Info.plist */,
+				F60216841500266C00E3B683 /* InfoPlist.strings */,
+				F60216871500266C00E3B683 /* main.m */,
+				F60216891500266C00E3B683 /* SeeBlurry-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F606743C18A80C3200E830A3 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F606743D18A80C3200E830A3 /* AudioFeedback.framework */,
+				F606743E18A80C3200E830A3 /* BasicMath.framework */,
+				F606743F18A80C3200E830A3 /* DataLogging.framework */,
+				F606744018A80C3200E830A3 /* GLVision.framework */,
+				F606744118A80C3200E830A3 /* OIBridge.framework */,
+				F606744218A80C3200E830A3 /* OpenCV.framework */,
+				F606744318A80C3200E830A3 /* See.framework */,
+			);
+			name = frameworks;
+			path = ../../frameworks;
+			sourceTree = "<group>";
+		};
+		F684989014C86EE300E669E2 /* SeeFrameRecording */ = {
+			isa = PBXGroup;
+			children = (
+				F684989914C86EE300E669E2 /* SFRAppDelegate.h */,
+				F684989A14C86EE300E669E2 /* SFRAppDelegate.mm */,
+				F684989F14C86F4000E669E2 /* SFRViewController.h */,
+				F68498A014C86F4000E669E2 /* SFRViewController.mm */,
+				F68498B914C8B0F400E669E2 /* SFRViewController.xib */,
+				F68498B314C8AE0600E669E2 /* GLVViewCam+Render.h */,
+				F68498B414C8AE0600E669E2 /* GLVViewCam+Render.mm */,
+				F684989114C86EE300E669E2 /* Supporting Files */,
+			);
+			path = SeeFrameRecording;
+			sourceTree = "<group>";
+		};
+		F684989114C86EE300E669E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F684989214C86EE300E669E2 /* SeeFrameRecording-Info.plist */,
+				F684989314C86EE300E669E2 /* InfoPlist.strings */,
+				F684989614C86EE300E669E2 /* main.m */,
+				F684989814C86EE300E669E2 /* SeeFrameRecording-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE192232148E5BD8009714E4 /* SeeTemplateTracking */ = {
+			isa = PBXGroup;
+			children = (
+				FE19223B148E5BD8009714E4 /* SeeTemplateTrackingAppDelegate.h */,
+				FE19223C148E5BD8009714E4 /* SeeTemplateTrackingAppDelegate.mm */,
+				FE19223E148E5BD8009714E4 /* SeeTemplateTrackingViewController.h */,
+				FE19223F148E5BD8009714E4 /* SeeTemplateTrackingViewController.mm */,
+				FEAA4BD7148E701D0081747F /* RenderView.h */,
+				FEAA4BD8148E701D0081747F /* RenderView.mm */,
+				FE192241148E5BD8009714E4 /* SeeTemplateTrackingViewController.xib */,
+				FE192233148E5BD8009714E4 /* Supporting Files */,
+			);
+			path = SeeTemplateTracking;
+			sourceTree = "<group>";
+		};
+		FE192233148E5BD8009714E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE192234148E5BD8009714E4 /* SeeTemplateTracking-Info.plist */,
+				FE192235148E5BD8009714E4 /* InfoPlist.strings */,
+				FE192238148E5BD8009714E4 /* main.m */,
+				FE19223A148E5BD8009714E4 /* SeeTemplateTracking-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEAFAD8C14604D6C00207F22 = {
+			isa = PBXGroup;
+			children = (
+				F64EFF161651CC4500C0D1CC /* Default-568h@2x.png */,
+				FEAFADA814604DD300207F22 /* See */,
+				FEAFADA514604DD300207F22 /* Frameworks */,
+				F60216811500266C00E3B683 /* SeeBlurry */,
+				FE192232148E5BD8009714E4 /* SeeTemplateTracking */,
+				FEFEE64D1460B3E600B3CCF6 /* SeeTestSaliency */,
+				FEFFB5301472E949000E42BC /* SeeTestPyramid */,
+				F684989014C86EE300E669E2 /* SeeFrameRecording */,
+				FEAFADD214605EEC00207F22 /* SeeTestCamera */,
+				FEAFADA414604DD300207F22 /* Products */,
+				F60216771500263F00E3B683 /* SeeTemplateTracking copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		FEAFADA414604DD300207F22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFADA314604DD300207F22 /* See.framework */,
+				FEAFADCA14605EEC00207F22 /* SeeCamera.app */,
+				FEFEE6481460B3E600B3CCF6 /* SeeSaliency.app */,
+				FEFFB52B1472E949000E42BC /* SeePyramid.app */,
+				FE19222D148E5BD7009714E4 /* SeeTemplate.app */,
+				F684988B14C86EE300E669E2 /* SeeFrameRecording.app */,
+				F646FCFD14F5E18000D2D7FE /* libsee.a */,
+				F602167C1500266C00E3B683 /* SeeBlurry.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEAFADA514604DD300207F22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F606743C18A80C3200E830A3 /* frameworks */,
+				F606742D18A8099300E830A3 /* libstdc++.6.0.9.dylib */,
+				F606740618A7EF5F00E830A3 /* ImageIO.framework */,
+				F606740418A7EF5900E830A3 /* MobileCoreServices.framework */,
+				F606740218A7EF5300E830A3 /* OpenGLES.framework */,
+				F606740018A7EF4D00E830A3 /* Accelerate.framework */,
+				F60673FE18A7EF4700E830A3 /* QuartzCore.framework */,
+				F60673FC18A7EF4200E830A3 /* CoreVideo.framework */,
+				F60673FA18A7EF3C00E830A3 /* AssetsLibrary.framework */,
+				F60673F818A7EF3500E830A3 /* CoreGraphics.framework */,
+				F60673F618A7EF2E00E830A3 /* Foundation.framework */,
+				F60673F418A7EF2600E830A3 /* UIKit.framework */,
+				F60673F218A7EF1D00E830A3 /* CoreMedia.framework */,
+				F60673F018A7EF1500E830A3 /* AVFoundation.framework */,
+				FECE100A1469957100B7C394 /* GLVision.framework */,
+				FE093E0A1466D0AB008630E9 /* DataLogging.framework */,
+				FEFEE6AE1460BDBC00B3CCF6 /* BasicMath.framework */,
+				FEAFADED14605F5600207F22 /* See.framework */,
+				FEAFADA614604DD300207F22 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEAFADA814604DD300207F22 /* See */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFADC41460501200207F22 /* SeeCommon.h */,
+				FEAFAD9614604DBD00207F22 /* ImageConversion.h */,
+				FEAFAD9714604DBD00207F22 /* ImageConversion.cpp */,
+				FEAFAD9814604DBD00207F22 /* ImageSaliency.h */,
+				FEAFAD9914604DBD00207F22 /* ImageSaliency.cpp */,
+				FEAFAD9A14604DBD00207F22 /* ImageSegmentation.h */,
+				FEAFAD9B14604DBD00207F22 /* ImageSegmentation.cpp */,
+				FEAFAD9C14604DBD00207F22 /* ImageSource.h */,
+				FEAFAD9D14604DBD00207F22 /* ImageSource.m */,
+				FE1922191488EB59009714E4 /* ImageMotion.h */,
+				FE19221B1488EB6D009714E4 /* ImageMotion.cpp */,
+				F602164E1500137200E3B683 /* ImageBlurriness.h */,
+				F602164B1500133E00E3B683 /* ImageBlurriness.cpp */,
+				FEAFAD9E14604DBD00207F22 /* ImageTypes.h */,
+				FEAFADA914604DD300207F22 /* Supporting Files */,
+			);
+			path = See;
+			sourceTree = "<group>";
+		};
+		FEAFADA914604DD300207F22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFADAA14604DD300207F22 /* See-Info.plist */,
+				FEAFADAB14604DD300207F22 /* InfoPlist.strings */,
+				FEAFADAE14604DD300207F22 /* See-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEAFADD214605EEC00207F22 /* SeeTestCamera */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFB557147341A4000E42BC /* icon.png */,
+				FEAFADDB14605EEC00207F22 /* SeeTestCameraAppDelegate.h */,
+				FEAFADDC14605EEC00207F22 /* SeeTestCameraAppDelegate.m */,
+				FEAFADDE14605EEC00207F22 /* SeeTestCameraViewController.h */,
+				FEAFADDF14605EEC00207F22 /* SeeTestCameraViewController.mm */,
+				FEAFADE114605EEC00207F22 /* SeeTestCameraViewController.xib */,
+				FEAFADD314605EEC00207F22 /* Supporting Files */,
+			);
+			path = SeeTestCamera;
+			sourceTree = "<group>";
+		};
+		FEAFADD314605EEC00207F22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFADD414605EEC00207F22 /* SeeTestCamera-Info.plist */,
+				FEAFADD514605EEC00207F22 /* InfoPlist.strings */,
+				FEAFADD814605EEC00207F22 /* main.m */,
+				FEAFADDA14605EEC00207F22 /* SeeTestCamera-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEFEE64D1460B3E600B3CCF6 /* SeeTestSaliency */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFB56114734394000E42BC /* icon.png */,
+				FEFEE6561460B3E600B3CCF6 /* SeeTestSaliencyAppDelegate.h */,
+				FEFEE6571460B3E600B3CCF6 /* SeeTestSaliencyAppDelegate.mm */,
+				FEFEE6591460B3E600B3CCF6 /* SeeTestSaliencyViewController.h */,
+				FEFEE65A1460B3E600B3CCF6 /* SeeTestSaliencyViewController.mm */,
+				FEFEE6621460B40400B3CCF6 /* SeeTestSaliencyViewController+FileHandling.h */,
+				FEFEE6631460B40400B3CCF6 /* SeeTestSaliencyViewController+FileHandling.mm */,
+				FEFEE6AB1460B9BD00B3CCF6 /* RenderView.h */,
+				FEFEE6AC1460B9BD00B3CCF6 /* RenderView.mm */,
+				FEFEE65C1460B3E600B3CCF6 /* SeeTestSaliencyViewController.xib */,
+				FEFEE64E1460B3E600B3CCF6 /* Supporting Files */,
+			);
+			path = SeeTestSaliency;
+			sourceTree = "<group>";
+		};
+		FEFEE64E1460B3E600B3CCF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEFEE64F1460B3E600B3CCF6 /* SeeTestSaliency-Info.plist */,
+				FEFEE6501460B3E600B3CCF6 /* InfoPlist.strings */,
+				FEFEE6531460B3E600B3CCF6 /* main.m */,
+				FEFEE6551460B3E600B3CCF6 /* SeeTestSaliency-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEFFB5301472E949000E42BC /* SeeTestPyramid */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFB559147342D4000E42BC /* icon.png */,
+				FEFFB5391472E949000E42BC /* SeeTestPyramidAppDelegate.h */,
+				FEFFB53A1472E949000E42BC /* SeeTestPyramidAppDelegate.mm */,
+				FEFFB53C1472E949000E42BC /* SeeTestPyramidViewController.h */,
+				FEFFB53D1472E949000E42BC /* SeeTestPyramidViewController.mm */,
+				FEFFB53F1472E94A000E42BC /* SeeTestPyramidViewController.xib */,
+				FEFFB5311472E949000E42BC /* Supporting Files */,
+			);
+			path = SeeTestPyramid;
+			sourceTree = "<group>";
+		};
+		FEFFB5311472E949000E42BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFB5321472E949000E42BC /* SeeTestPyramid-Info.plist */,
+				FEFFB5331472E949000E42BC /* InfoPlist.strings */,
+				FEFFB5361472E949000E42BC /* main.m */,
+				FEFFB5381472E949000E42BC /* SeeTestPyramid-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F646FCFB14F5E18000D2D7FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F646FD0214F5E18F00D2D7FE /* SeeCommon.h in Headers */,
+				F646FD0314F5E1A000D2D7FE /* ImageConversion.h in Headers */,
+				F646FD0514F5E1AA00D2D7FE /* ImageSaliency.h in Headers */,
+				F646FD0714F5E1AF00D2D7FE /* ImageSegmentation.h in Headers */,
+				F60216501500222A00E3B683 /* ImageBlurriness.h in Headers */,
+				F60216511500223100E3B683 /* ImageMotion.h in Headers */,
+				F646FD0914F5E1E200D2D7FE /* ImageTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFADB614604DF800207F22 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEAFADB714604E0300207F22 /* ImageConversion.h in Headers */,
+				FEAFADB814604E0300207F22 /* ImageSaliency.h in Headers */,
+				FEAFADB914604E0300207F22 /* ImageSegmentation.h in Headers */,
+				FEAFADBA14604E0300207F22 /* ImageSource.h in Headers */,
+				FEAFADBB14604E0300207F22 /* ImageTypes.h in Headers */,
+				FE19221D1488EBBC009714E4 /* ImageMotion.h in Headers */,
+				FEAFADC51460501200207F22 /* SeeCommon.h in Headers */,
+				F602164F1500137300E3B683 /* ImageBlurriness.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F602167B1500266C00E3B683 /* SeeBlurry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60216931500266C00E3B683 /* Build configuration list for PBXNativeTarget "SeeBlurry" */;
+			buildPhases = (
+				F60216781500266C00E3B683 /* Sources */,
+				F60216791500266C00E3B683 /* Frameworks */,
+				F602167A1500266C00E3B683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6437F2D150167DC00EE1589 /* PBXTargetDependency */,
+			);
+			name = SeeBlurry;
+			productName = SeeBlurry;
+			productReference = F602167C1500266C00E3B683 /* SeeBlurry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F646FCFC14F5E18000D2D7FE /* See Static Lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F646FD0014F5E18100D2D7FE /* Build configuration list for PBXNativeTarget "See Static Lib" */;
+			buildPhases = (
+				F646FCF914F5E18000D2D7FE /* Sources */,
+				F646FCFA14F5E18000D2D7FE /* Frameworks */,
+				F646FCFB14F5E18000D2D7FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "See Static Lib";
+			productName = "See Static Lib";
+			productReference = F646FCFD14F5E18000D2D7FE /* libsee.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F684988A14C86EE300E669E2 /* SeeFrameRecording */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F684989C14C86EE300E669E2 /* Build configuration list for PBXNativeTarget "SeeFrameRecording" */;
+			buildPhases = (
+				F684988714C86EE300E669E2 /* Sources */,
+				F684988814C86EE300E669E2 /* Frameworks */,
+				F684988914C86EE300E669E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeeFrameRecording;
+			productName = SeeFrameRecording;
+			productReference = F684988B14C86EE300E669E2 /* SeeFrameRecording.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE19222C148E5BD7009714E4 /* SeeTemplateTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE192244148E5BD8009714E4 /* Build configuration list for PBXNativeTarget "SeeTemplateTracking" */;
+			buildPhases = (
+				FE192229148E5BD7009714E4 /* Sources */,
+				FE19222A148E5BD7009714E4 /* Frameworks */,
+				FE19222B148E5BD7009714E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE192248148E5BF7009714E4 /* PBXTargetDependency */,
+			);
+			name = SeeTemplateTracking;
+			productName = SeeTemplateTracking;
+			productReference = FE19222D148E5BD7009714E4 /* SeeTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEAFADA214604DD300207F22 /* See */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEAFADAF14604DD300207F22 /* Build configuration list for PBXNativeTarget "See" */;
+			buildPhases = (
+				FEAFAD9F14604DD300207F22 /* Sources */,
+				FEAFADA014604DD300207F22 /* Frameworks */,
+				FEAFADA114604DD300207F22 /* Resources */,
+				FEAFADB614604DF800207F22 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = See;
+			productName = See;
+			productReference = FEAFADA314604DD300207F22 /* See.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FEAFADC914605EEC00207F22 /* SeeTestCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEAFADE414605EEC00207F22 /* Build configuration list for PBXNativeTarget "SeeTestCamera" */;
+			buildPhases = (
+				FEAFADC614605EEC00207F22 /* Sources */,
+				FEAFADC714605EEC00207F22 /* Frameworks */,
+				FEAFADC814605EEC00207F22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEAFADE814605F1600207F22 /* PBXTargetDependency */,
+			);
+			name = SeeTestCamera;
+			productName = SeeTestCamera;
+			productReference = FEAFADCA14605EEC00207F22 /* SeeCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEFEE6471460B3E600B3CCF6 /* SeeTestSaliency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFEE65F1460B3E600B3CCF6 /* Build configuration list for PBXNativeTarget "SeeTestSaliency" */;
+			buildPhases = (
+				FEFEE6441460B3E600B3CCF6 /* Sources */,
+				FEFEE6451460B3E600B3CCF6 /* Frameworks */,
+				FEFEE6461460B3E600B3CCF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEFEE6B61460D58300B3CCF6 /* PBXTargetDependency */,
+			);
+			name = SeeTestSaliency;
+			productName = SeeTestSaliency;
+			productReference = FEFEE6481460B3E600B3CCF6 /* SeeSaliency.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEFFB52A1472E949000E42BC /* SeeTestPyramid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFFB5441472E94A000E42BC /* Build configuration list for PBXNativeTarget "SeeTestPyramid" */;
+			buildPhases = (
+				FEFFB5271472E949000E42BC /* Sources */,
+				FEFFB5281472E949000E42BC /* Frameworks */,
+				FEFFB5291472E949000E42BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEFFB55314730CDE000E42BC /* PBXTargetDependency */,
+			);
+			name = SeeTestPyramid;
+			productName = SeeTestPyramid;
+			productReference = FEFFB52B1472E949000E42BC /* SeePyramid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEAFAD8E14604D6C00207F22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Robotics Institute. Carnegie Mellon University";
+			};
+			buildConfigurationList = FEAFAD9114604D6C00207F22 /* Build configuration list for PBXProject "Framework-See" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEAFAD8C14604D6C00207F22;
+			productRefGroup = FEAFADA414604DD300207F22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEAFADA214604DD300207F22 /* See */,
+				FEAFADBF14604ED000207F22 /* Build Aggregate */,
+				FEAFADC914605EEC00207F22 /* SeeTestCamera */,
+				FEFFB52A1472E949000E42BC /* SeeTestPyramid */,
+				FEFEE6471460B3E600B3CCF6 /* SeeTestSaliency */,
+				FE19222C148E5BD7009714E4 /* SeeTemplateTracking */,
+				F684988A14C86EE300E669E2 /* SeeFrameRecording */,
+				F602167B1500266C00E3B683 /* SeeBlurry */,
+				F646FCFC14F5E18000D2D7FE /* See Static Lib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F602167A1500266C00E3B683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60216861500266C00E3B683 /* InfoPlist.strings in Resources */,
+				F6AA1E6318A88A4A0016B107 /* Default-568h@2x.png in Resources */,
+				F60216921500266C00E3B683 /* SBViewController.xib in Resources */,
+				F6437F2815013DA500EE1589 /* GLVision.framework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F684988914C86EE300E669E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F684989514C86EE300E669E2 /* InfoPlist.strings in Resources */,
+				F68498BA14C8B0F400E669E2 /* SFRViewController.xib in Resources */,
+				F68498BB14C8B25000E669E2 /* GLVision.framework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE19222B148E5BD7009714E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE192237148E5BD8009714E4 /* InfoPlist.strings in Resources */,
+				FE192243148E5BD8009714E4 /* SeeTemplateTrackingViewController.xib in Resources */,
+				FEAA4BDC148E77110081747F /* GLVision.framework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFADA114604DD300207F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFADC814605EEC00207F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEAFADD714605EEC00207F22 /* InfoPlist.strings in Resources */,
+				FEAFADE314605EEC00207F22 /* SeeTestCameraViewController.xib in Resources */,
+				FEFFB558147341A4000E42BC /* icon.png in Resources */,
+				F64EFF171651CC4500C0D1CC /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFEE6461460B3E600B3CCF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFEE6521460B3E600B3CCF6 /* InfoPlist.strings in Resources */,
+				FEFEE65E1460B3E600B3CCF6 /* SeeTestSaliencyViewController.xib in Resources */,
+				FECE100C146995EA00B7C394 /* GLVision.framework in Resources */,
+				FEFFB565147343B3000E42BC /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFFB5291472E949000E42BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFFB5351472E949000E42BC /* InfoPlist.strings in Resources */,
+				FEFFB5411472E94A000E42BC /* SeeTestPyramidViewController.xib in Resources */,
+				FEFFB55A147342D4000E42BC /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FEAFADC314604ED400207F22 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=See\nFMK_VERSION=A\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/../../frameworks/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F60216781500266C00E3B683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60216881500266C00E3B683 /* main.m in Sources */,
+				F602168C1500266C00E3B683 /* SBAppDelegate.mm in Sources */,
+				F602168F1500266C00E3B683 /* SBViewController.mm in Sources */,
+				F60216AD150028B200E3B683 /* RenderView.mm in Sources */,
+				F6437F2B1501443200EE1589 /* BlurryBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F646FCF914F5E18000D2D7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F646FD0414F5E1A200D2D7FE /* ImageConversion.cpp in Sources */,
+				F646FD0614F5E1AC00D2D7FE /* ImageSaliency.cpp in Sources */,
+				F646FD0814F5E1B300D2D7FE /* ImageSegmentation.cpp in Sources */,
+				F60216521500223D00E3B683 /* ImageMotion.cpp in Sources */,
+				F60216531500224000E3B683 /* ImageBlurriness.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F684988714C86EE300E669E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F684989714C86EE300E669E2 /* main.m in Sources */,
+				F684989B14C86EE300E669E2 /* SFRAppDelegate.mm in Sources */,
+				F68498A114C86F4000E669E2 /* SFRViewController.mm in Sources */,
+				F68498B514C8AE0600E669E2 /* GLVViewCam+Render.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE192229148E5BD7009714E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE192239148E5BD8009714E4 /* main.m in Sources */,
+				FE19223D148E5BD8009714E4 /* SeeTemplateTrackingAppDelegate.mm in Sources */,
+				FE192240148E5BD8009714E4 /* SeeTemplateTrackingViewController.mm in Sources */,
+				FEAA4BD9148E701D0081747F /* RenderView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFAD9F14604DD300207F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEAFADB214604DF200207F22 /* ImageConversion.cpp in Sources */,
+				FEAFADB314604DF200207F22 /* ImageSaliency.cpp in Sources */,
+				FEAFADB414604DF200207F22 /* ImageSegmentation.cpp in Sources */,
+				FEAFADB514604DF200207F22 /* ImageSource.m in Sources */,
+				FE19221C1488EB6D009714E4 /* ImageMotion.cpp in Sources */,
+				F602164C1500133E00E3B683 /* ImageBlurriness.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFADC614605EEC00207F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEAFADD914605EEC00207F22 /* main.m in Sources */,
+				FEAFADDD14605EEC00207F22 /* SeeTestCameraAppDelegate.m in Sources */,
+				FEAFADE014605EEC00207F22 /* SeeTestCameraViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFEE6441460B3E600B3CCF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFEE6541460B3E600B3CCF6 /* main.m in Sources */,
+				FEFEE6581460B3E600B3CCF6 /* SeeTestSaliencyAppDelegate.mm in Sources */,
+				FEFEE65B1460B3E600B3CCF6 /* SeeTestSaliencyViewController.mm in Sources */,
+				FEFEE6731460B59C00B3CCF6 /* SeeTestSaliencyViewController+FileHandling.mm in Sources */,
+				FEFEE6AD1460B9BD00B3CCF6 /* RenderView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFFB5271472E949000E42BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFFB5371472E949000E42BC /* main.m in Sources */,
+				FEFFB53B1472E949000E42BC /* SeeTestPyramidAppDelegate.mm in Sources */,
+				FEFFB53E1472E949000E42BC /* SeeTestPyramidViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6437F2D150167DC00EE1589 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			targetProxy = F6437F2C150167DC00EE1589 /* PBXContainerItemProxy */;
+		};
+		FE192248148E5BF7009714E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			targetProxy = FE192247148E5BF7009714E4 /* PBXContainerItemProxy */;
+		};
+		FEAFADE814605F1600207F22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			targetProxy = FEAFADE714605F1600207F22 /* PBXContainerItemProxy */;
+		};
+		FEFEE6B61460D58300B3CCF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			targetProxy = FEFEE6B51460D58300B3CCF6 /* PBXContainerItemProxy */;
+		};
+		FEFFB55314730CDE000E42BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			targetProxy = FEFFB55214730CDE000E42BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F60216841500266C00E3B683 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F60216851500266C00E3B683 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F60216901500266C00E3B683 /* SBViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F60216911500266C00E3B683 /* en */,
+			);
+			name = SBViewController.xib;
+			sourceTree = "<group>";
+		};
+		F684989314C86EE300E669E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F684989414C86EE300E669E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE192235148E5BD8009714E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE192236148E5BD8009714E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE192241148E5BD8009714E4 /* SeeTemplateTrackingViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE192242148E5BD8009714E4 /* en */,
+			);
+			name = SeeTemplateTrackingViewController.xib;
+			sourceTree = "<group>";
+		};
+		FEAFADAB14604DD300207F22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEAFADAC14604DD300207F22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEAFADD514605EEC00207F22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEAFADD614605EEC00207F22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEAFADE114605EEC00207F22 /* SeeTestCameraViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEAFADE214605EEC00207F22 /* en */,
+			);
+			name = SeeTestCameraViewController.xib;
+			sourceTree = "<group>";
+		};
+		FEFEE6501460B3E600B3CCF6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFEE6511460B3E600B3CCF6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEFEE65C1460B3E600B3CCF6 /* SeeTestSaliencyViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFEE65D1460B3E600B3CCF6 /* en */,
+			);
+			name = SeeTestSaliencyViewController.xib;
+			sourceTree = "<group>";
+		};
+		FEFFB5331472E949000E42BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFFB5341472E949000E42BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEFFB53F1472E94A000E42BC /* SeeTestPyramidViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFFB5401472E94A000E42BC /* en */,
+			);
+			name = SeeTestPyramidViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F60216941500266C00E3B683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeBlurry/SeeBlurry-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeBlurry/SeeBlurry-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F60216951500266C00E3B683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeBlurry/SeeBlurry-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeBlurry/SeeBlurry-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F646FCFE14F5E18100D2D7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../static_libs/See/lib";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../static_libs/BasicMath/include",
+					"$(SRCROOT)/../../static_libs/DataLogging/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../static_libs/BasicMath/lib\"",
+					"\"$(SRCROOT)/../../static_libs/DataLogging/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = see;
+				PUBLIC_HEADERS_FOLDER_PATH = ../include/See;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F646FCFF14F5E18100D2D7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../static_libs/BasicMath/include",
+					"$(SRCROOT)/../../static_libs/DataLogging/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../static_libs/BasicMath/lib\"",
+					"\"$(SRCROOT)/../../static_libs/DataLogging/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = see;
+				PUBLIC_HEADERS_FOLDER_PATH = ../include/See;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F684989D14C86EE300E669E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeFrameRecording/SeeFrameRecording-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeFrameRecording/SeeFrameRecording-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F684989E14C86EE300E669E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeFrameRecording/SeeFrameRecording-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeFrameRecording/SeeFrameRecording-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FE192245148E5BD8009714E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeTemplateTracking/SeeTemplateTracking-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeTemplateTracking/SeeTemplateTracking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = SeeTemplate;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE192246148E5BD8009714E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeTemplateTracking/SeeTemplateTracking-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeTemplateTracking/SeeTemplateTracking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = SeeTemplate;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FEAFAD9314604D6C00207F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		FEAFAD9414604D6C00207F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		FEAFADB014604DD300207F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "See/See-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "See/See-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		FEAFADB114604DD300207F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "See/See-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "See/See-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		FEAFADC114604ED000207F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.0;
+			};
+			name = Debug;
+		};
+		FEAFADC214604ED000207F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.0;
+			};
+			name = Release;
+		};
+		FEAFADE514605EEC00207F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeTestCamera/SeeTestCamera-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeTestCamera/SeeTestCamera-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = SeeCamera;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEAFADE614605EEC00207F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeTestCamera/SeeTestCamera-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeTestCamera/SeeTestCamera-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = SeeCamera;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FEFEE6601460B3E600B3CCF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\\\"$(SRCROOT)/../../frameworks\\\"",
+					"/Users/marynelv/Documents/Repos/RERC-APT/code/frameworks/frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeTestSaliency/SeeTestSaliency-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeTestSaliency/SeeTestSaliency-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = SeeSaliency;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "armv6 armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEFEE6611460B3E600B3CCF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\\\"$(SRCROOT)/../../frameworks\\\"",
+					"/Users/marynelv/Documents/Repos/RERC-APT/code/frameworks/frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeTestSaliency/SeeTestSaliency-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeTestSaliency/SeeTestSaliency-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = SeeSaliency;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FEFFB5421472E94A000E42BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/../../frameworks\\\"",
+					"/Users/marynelv/Documents/Repos/RERC-APT/code/frameworks/frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeTestPyramid/SeeTestPyramid-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeTestPyramid/SeeTestPyramid-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = SeePyramid;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEFFB5431472E94A000E42BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/../../frameworks\\\"",
+					"/Users/marynelv/Documents/Repos/RERC-APT/code/frameworks/frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeTestPyramid/SeeTestPyramid-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SeeTestPyramid/SeeTestPyramid-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = SeePyramid;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F60216931500266C00E3B683 /* Build configuration list for PBXNativeTarget "SeeBlurry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60216941500266C00E3B683 /* Debug */,
+				F60216951500266C00E3B683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F646FD0014F5E18100D2D7FE /* Build configuration list for PBXNativeTarget "See Static Lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F646FCFE14F5E18100D2D7FE /* Debug */,
+				F646FCFF14F5E18100D2D7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F684989C14C86EE300E669E2 /* Build configuration list for PBXNativeTarget "SeeFrameRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F684989D14C86EE300E669E2 /* Debug */,
+				F684989E14C86EE300E669E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE192244148E5BD8009714E4 /* Build configuration list for PBXNativeTarget "SeeTemplateTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE192245148E5BD8009714E4 /* Debug */,
+				FE192246148E5BD8009714E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEAFAD9114604D6C00207F22 /* Build configuration list for PBXProject "Framework-See" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEAFAD9314604D6C00207F22 /* Debug */,
+				FEAFAD9414604D6C00207F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEAFADAF14604DD300207F22 /* Build configuration list for PBXNativeTarget "See" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEAFADB014604DD300207F22 /* Debug */,
+				FEAFADB114604DD300207F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEAFADC014604ED000207F22 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEAFADC114604ED000207F22 /* Debug */,
+				FEAFADC214604ED000207F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEAFADE414605EEC00207F22 /* Build configuration list for PBXNativeTarget "SeeTestCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEAFADE514605EEC00207F22 /* Debug */,
+				FEAFADE614605EEC00207F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFEE65F1460B3E600B3CCF6 /* Build configuration list for PBXNativeTarget "SeeTestSaliency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFEE6601460B3E600B3CCF6 /* Debug */,
+				FEFEE6611460B3E600B3CCF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFFB5441472E94A000E42BC /* Build configuration list for PBXNativeTarget "SeeTestPyramid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFFB5421472E94A000E42BC /* Debug */,
+				FEFFB5431472E94A000E42BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEAFAD8E14604D6C00207F22 /* Project object */;
+}
