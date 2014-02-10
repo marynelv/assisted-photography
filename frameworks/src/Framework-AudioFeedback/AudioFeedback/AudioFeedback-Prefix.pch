@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AudioFeedback' target in the 'AudioFeedback' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
