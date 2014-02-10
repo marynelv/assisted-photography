@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		FECE102B14699A9100B7C394 /* Framework Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FECE102C14699A9100B7C394 /* Build configuration list for PBXAggregateTarget "Framework Aggregate" */;
+			buildPhases = (
+				FECE102F14699A9A00B7C394 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Framework Aggregate";
+			productName = "Framework Aggregate";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F60673ED18A7E74C00E830A3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673EC18A7E74C00E830A3 /* MobileCoreServices.framework */; };
+		F60673EF18A7E75400E830A3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60673EE18A7E75400E830A3 /* ImageIO.framework */; };
+		F606742B18A8067800E830A3 /* See.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE00A8E51468CBB600B058DA /* See.framework */; };
+		F606744618A80E4F00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F606744518A80E4F00E830A3 /* libstdc++.6.0.9.dylib */; };
+		F6437F22150031B000EE1589 /* GLVViewResizeGray.h in Headers */ = {isa = PBXBuildFile; fileRef = F6437F20150031B000EE1589 /* GLVViewResizeGray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6437F23150031B000EE1589 /* GLVViewResizeGray.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6437F21150031B000EE1589 /* GLVViewResizeGray.mm */; };
+		F64EFEEB1651415A00C0D1CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64EFEEA1651415A00C0D1CC /* Default-568h@2x.png */; };
+		F64EFF151651CB5E00C0D1CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64EFEEA1651415A00C0D1CC /* Default-568h@2x.png */; };
+		FE00A8B3146842C700B058DA /* GLVProgramSaliencyFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = FE00A8B1146842C700B058DA /* GLVProgramSaliencyFeatures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE00A8B4146842C700B058DA /* GLVProgramSaliencyFeatures.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8B2146842C700B058DA /* GLVProgramSaliencyFeatures.mm */; };
+		FE00A8B71468438200B058DA /* saliencyFeatures.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FE00A8B61468438200B058DA /* saliencyFeatures.fsh */; };
+		FE00A8C21468CB8500B058DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C538314538845004FED72 /* UIKit.framework */; };
+		FE00A8C31468CB8500B058DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C538514538845004FED72 /* Foundation.framework */; };
+		FE00A8C41468CB8500B058DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C538714538845004FED72 /* CoreGraphics.framework */; };
+		FE00A8CA1468CB8500B058DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE00A8C81468CB8500B058DA /* InfoPlist.strings */; };
+		FE00A8CC1468CB8500B058DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8CB1468CB8500B058DA /* main.m */; };
+		FE00A8D01468CB8500B058DA /* SeeTestSaliencyAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8CF1468CB8500B058DA /* SeeTestSaliencyAppDelegate.mm */; };
+		FE00A8D31468CB8500B058DA /* SeeTestSaliencyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8D21468CB8500B058DA /* SeeTestSaliencyViewController.mm */; };
+		FE00A8D61468CB8500B058DA /* SeeTestSaliencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE00A8D41468CB8500B058DA /* SeeTestSaliencyViewController.xib */; };
+		FE00A8DC1468CBA400B058DA /* GLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD54145EF98D00207F22 /* GLVision.framework */; };
+		FE00A8DD1468CBA400B058DA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD4E145E58EE00207F22 /* CoreMedia.framework */; };
+		FE00A8DE1468CBA400B058DA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD4A145E58AC00207F22 /* CoreVideo.framework */; };
+		FE00A8DF1468CBA400B058DA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD48145E589700207F22 /* AVFoundation.framework */; };
+		FE00A8E01468CBA400B058DA /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD46145E560F00207F22 /* BasicMath.framework */; };
+		FE00A8E11468CBA400B058DA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C5403145393C7004FED72 /* CoreFoundation.framework */; };
+		FE00A8E21468CBA400B058DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C53F114538F49004FED72 /* QuartzCore.framework */; };
+		FE00A8E31468CBA400B058DA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C53EF14538F3E004FED72 /* OpenGLES.framework */; };
+		FE00A8E81468CC6B00B058DA /* DataLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE00A8E71468CC6B00B058DA /* DataLogging.framework */; };
+		FE00A8EB1468CD1800B058DA /* RenderView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8EA1468CD1800B058DA /* RenderView.mm */; };
+		FE00A8F21468E2EF00B058DA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE00A8F11468E2EF00B058DA /* Accelerate.framework */; };
+		FE00A8F41468F2B600B058DA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE00A8F31468F2B600B058DA /* AssetsLibrary.framework */; };
+		FE00A8FC1469162200B058DA /* GLVision.framework in Resources */ = {isa = PBXBuildFile; fileRef = FEAFAD54145EF98D00207F22 /* GLVision.framework */; };
+		FE1C538E14538845004FED72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE1C538C14538845004FED72 /* InfoPlist.strings */; };
+		FE1C539014538845004FED72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1C538F14538845004FED72 /* main.m */; };
+		FE1C539A14538845004FED72 /* GLVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1C539814538845004FED72 /* GLVViewController.xib */; };
+		FE1C540F145394DA004FED72 /* GLVProgramHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE1C53DB14538AB5004FED72 /* GLVProgramHandler.mm */; };
+		FE1C5410145394DB004FED72 /* GLVView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1C53DD14538AB5004FED72 /* GLVView.m */; };
+		FE1C5412145394E5004FED72 /* GLVCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1C53D914538AB5004FED72 /* GLVCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1C5413145394E6004FED72 /* GLVProgramHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1C53DA14538AB5004FED72 /* GLVProgramHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1C5414145394E8004FED72 /* GLVView.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1C53DC14538AB5004FED72 /* GLVView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1C54201453C442004FED72 /* GLVEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1C541E1453C442004FED72 /* GLVEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1C54211453C442004FED72 /* GLVEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1C541F1453C442004FED72 /* GLVEngine.m */; };
+		FE1C543914565D15004FED72 /* GLVProgramGray.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1C543714565D15004FED72 /* GLVProgramGray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1C543A14565D15004FED72 /* GLVProgramGray.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE1C543814565D15004FED72 /* GLVProgramGray.mm */; };
+		FE1C54441456B2D5004FED72 /* GLVPrograms.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1C54431456B2D4004FED72 /* GLVPrograms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1C544A1456C87B004FED72 /* GLVProgramTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1C54481456C87A004FED72 /* GLVProgramTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1C544B1456C87B004FED72 /* GLVProgramTexture.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE1C54491456C87A004FED72 /* GLVProgramTexture.mm */; };
+		FE1C54591456E2F6004FED72 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C5403145393C7004FED72 /* CoreFoundation.framework */; };
+		FE1C545A1456E2F6004FED72 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C53F114538F49004FED72 /* QuartzCore.framework */; };
+		FE1C545B1456E2F6004FED72 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C53EF14538F3E004FED72 /* OpenGLES.framework */; };
+		FE1C545C1456E2F6004FED72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C538314538845004FED72 /* UIKit.framework */; };
+		FE1C545D1456E2F6004FED72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C538514538845004FED72 /* Foundation.framework */; };
+		FE1C545E1456E2F6004FED72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C538714538845004FED72 /* CoreGraphics.framework */; };
+		FE1C54641456E3CD004FED72 /* gray.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FE1C544F1456D661004FED72 /* gray.fsh */; };
+		FE1C54651456E3CD004FED72 /* texture.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FE1C54501456D661004FED72 /* texture.fsh */; };
+		FE1C54661456E3CD004FED72 /* texturedProjection.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FE1C54511456D661004FED72 /* texturedProjection.vsh */; };
+		FE7B85A2146AEFF500F0E097 /* GLVViewCam.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7B85A0146AEFF500F0E097 /* GLVViewCam.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE7B85A3146AEFF500F0E097 /* GLVViewCam.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7B85A1146AEFF500F0E097 /* GLVViewCam.m */; };
+		FE7B85A5146B14D200F0E097 /* GLVViewSaliency.h in Headers */ = {isa = PBXBuildFile; fileRef = FE00A8B814684B4B00B058DA /* GLVViewSaliency.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE7B85A6146B14E000F0E097 /* GLVViewSaliency.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8B914684B4B00B058DA /* GLVViewSaliency.mm */; };
+		FEAFACB2145DB35A00207F22 /* texture.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FEAFACB1145DB2B200207F22 /* texture.vsh */; };
+		FEAFACBC145E4CB300207F22 /* ImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAFACBB145E4CB300207F22 /* ImageSource.m */; };
+		FEAFAD47145E560F00207F22 /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD46145E560F00207F22 /* BasicMath.framework */; };
+		FEAFAD49145E589700207F22 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD48145E589700207F22 /* AVFoundation.framework */; };
+		FEAFAD4B145E58AC00207F22 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD4A145E58AC00207F22 /* CoreVideo.framework */; };
+		FEAFAD4F145E58EE00207F22 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD4E145E58EE00207F22 /* CoreMedia.framework */; };
+		FEAFAD55145EF98D00207F22 /* GLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD54145EF98D00207F22 /* GLVision.framework */; };
+		FEAFAD56145EFA7E00207F22 /* GLVAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE1C539314538845004FED72 /* GLVAppDelegate.mm */; };
+		FEAFAD57145EFA8100207F22 /* GLVViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE1C539614538845004FED72 /* GLVViewController.mm */; };
+		FEAFAD58145EFA8700207F22 /* GLVViewCam+Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEAFACBE145E52FB00207F22 /* GLVViewCam+Render.mm */; };
+		FEAFAD59145EFAD700207F22 /* GLVision.framework in Resources */ = {isa = PBXBuildFile; fileRef = FEAFAD54145EF98D00207F22 /* GLVision.framework */; };
+		FEAFAD5C145FA43700207F22 /* TimeIntervalTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD5B145FA43600207F22 /* TimeIntervalTracker.cpp */; };
+		FEFFB56814737823000E42BC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFFB56714737823000E42BC /* icon.png */; };
+		FEFFB56E14737974000E42BC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFFB56D14737974000E42BC /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FECE103014699AA300B7C394 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE1C537614538845004FED72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FECE102B14699A9100B7C394;
+			remoteInfo = "Framework Aggregate";
+		};
+		FECE103214699AA700B7C394 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE1C537614538845004FED72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FECE102B14699A9100B7C394;
+			remoteInfo = "Framework Aggregate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F60673EC18A7E74C00E830A3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F60673EE18A7E75400E830A3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		F606742318A7F9E100E830A3 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		F606742518A7FFDC00E830A3 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		F606744518A80E4F00E830A3 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		F6437F20150031B000EE1589 /* GLVViewResizeGray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVViewResizeGray.h; sourceTree = "<group>"; };
+		F6437F21150031B000EE1589 /* GLVViewResizeGray.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVViewResizeGray.mm; sourceTree = "<group>"; };
+		F6437F25150037E600EE1589 /* BasicMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BasicMath.framework; path = ../../frameworks/BasicMath.framework; sourceTree = "<group>"; };
+		F64EFEEA1651415A00C0D1CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FE00A8B1146842C700B058DA /* GLVProgramSaliencyFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVProgramSaliencyFeatures.h; sourceTree = "<group>"; };
+		FE00A8B2146842C700B058DA /* GLVProgramSaliencyFeatures.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVProgramSaliencyFeatures.mm; sourceTree = "<group>"; };
+		FE00A8B61468438200B058DA /* saliencyFeatures.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = saliencyFeatures.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		FE00A8B814684B4B00B058DA /* GLVViewSaliency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVViewSaliency.h; sourceTree = "<group>"; };
+		FE00A8B914684B4B00B058DA /* GLVViewSaliency.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVViewSaliency.mm; sourceTree = "<group>"; };
+		FE00A8C01468CB8500B058DA /* GLVFeatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLVFeatures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE00A8C71468CB8500B058DA /* TestSaliencyFeatures-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestSaliencyFeatures-Info.plist"; sourceTree = "<group>"; };
+		FE00A8C91468CB8500B058DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE00A8CB1468CB8500B058DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE00A8CD1468CB8500B058DA /* TestSaliencyFeatures-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSaliencyFeatures-Prefix.pch"; sourceTree = "<group>"; };
+		FE00A8CE1468CB8500B058DA /* SeeTestSaliencyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTestSaliencyAppDelegate.h; sourceTree = "<group>"; };
+		FE00A8CF1468CB8500B058DA /* SeeTestSaliencyAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SeeTestSaliencyAppDelegate.mm; sourceTree = "<group>"; };
+		FE00A8D11468CB8500B058DA /* SeeTestSaliencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeTestSaliencyViewController.h; sourceTree = "<group>"; };
+		FE00A8D21468CB8500B058DA /* SeeTestSaliencyViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SeeTestSaliencyViewController.mm; sourceTree = "<group>"; };
+		FE00A8D51468CB8500B058DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SeeTestSaliencyViewController.xib; sourceTree = "<group>"; };
+		FE00A8E51468CBB600B058DA /* See.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = See.framework; path = ../../frameworks/See.framework; sourceTree = "<group>"; };
+		FE00A8E71468CC6B00B058DA /* DataLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DataLogging.framework; path = ../../frameworks/DataLogging.framework; sourceTree = "<group>"; };
+		FE00A8E91468CD1800B058DA /* RenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderView.h; sourceTree = "<group>"; };
+		FE00A8EA1468CD1800B058DA /* RenderView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RenderView.mm; sourceTree = "<group>"; };
+		FE00A8F11468E2EF00B058DA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FE00A8F31468F2B600B058DA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		FE1C537F14538845004FED72 /* GLVTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLVTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE1C538314538845004FED72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE1C538514538845004FED72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE1C538714538845004FED72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE1C538B14538845004FED72 /* Framework-GLVision-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Framework-GLVision-Info.plist"; sourceTree = "<group>"; };
+		FE1C538D14538845004FED72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE1C538F14538845004FED72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE1C539114538845004FED72 /* Framework-GLVision-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Framework-GLVision-Prefix.pch"; sourceTree = "<group>"; };
+		FE1C539214538845004FED72 /* GLVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLVAppDelegate.h; sourceTree = "<group>"; };
+		FE1C539314538845004FED72 /* GLVAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVAppDelegate.mm; sourceTree = "<group>"; };
+		FE1C539514538845004FED72 /* GLVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLVViewController.h; sourceTree = "<group>"; };
+		FE1C539614538845004FED72 /* GLVViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVViewController.mm; sourceTree = "<group>"; };
+		FE1C539914538845004FED72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GLVViewController.xib; sourceTree = "<group>"; };
+		FE1C53AB145388C4004FED72 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FE1C53D914538AB5004FED72 /* GLVCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GLVCommon.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FE1C53DA14538AB5004FED72 /* GLVProgramHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVProgramHandler.h; sourceTree = "<group>"; };
+		FE1C53DB14538AB5004FED72 /* GLVProgramHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = GLVProgramHandler.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FE1C53DC14538AB5004FED72 /* GLVView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVView.h; sourceTree = "<group>"; };
+		FE1C53DD14538AB5004FED72 /* GLVView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GLVView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FE1C53EF14538F3E004FED72 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FE1C53F114538F49004FED72 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FE1C5401145393C7004FED72 /* GLVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE1C5403145393C7004FED72 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FE1C5407145393C7004FED72 /* GLVision-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLVision-Info.plist"; sourceTree = "<group>"; };
+		FE1C5409145393C7004FED72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE1C540B145393C7004FED72 /* GLVision-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLVision-Prefix.pch"; sourceTree = "<group>"; };
+		FE1C541E1453C442004FED72 /* GLVEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVEngine.h; sourceTree = "<group>"; };
+		FE1C541F1453C442004FED72 /* GLVEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVEngine.m; sourceTree = "<group>"; };
+		FE1C543714565D15004FED72 /* GLVProgramGray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVProgramGray.h; sourceTree = "<group>"; };
+		FE1C543814565D15004FED72 /* GLVProgramGray.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVProgramGray.mm; sourceTree = "<group>"; };
+		FE1C54431456B2D4004FED72 /* GLVPrograms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVPrograms.h; sourceTree = "<group>"; };
+		FE1C54481456C87A004FED72 /* GLVProgramTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVProgramTexture.h; sourceTree = "<group>"; };
+		FE1C54491456C87A004FED72 /* GLVProgramTexture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVProgramTexture.mm; sourceTree = "<group>"; };
+		FE1C544F1456D661004FED72 /* gray.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = gray.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		FE1C54501456D661004FED72 /* texture.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		FE1C54511456D661004FED72 /* texturedProjection.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texturedProjection.vsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		FE7B85A0146AEFF500F0E097 /* GLVViewCam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVViewCam.h; sourceTree = "<group>"; };
+		FE7B85A1146AEFF500F0E097 /* GLVViewCam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVViewCam.m; sourceTree = "<group>"; };
+		FEAFACB1145DB2B200207F22 /* texture.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture.vsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		FEAFACBA145E4CB300207F22 /* ImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSource.h; sourceTree = "<group>"; };
+		FEAFACBB145E4CB300207F22 /* ImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSource.m; sourceTree = "<group>"; };
+		FEAFACBD145E52FB00207F22 /* GLVViewCam+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLVViewCam+Render.h"; sourceTree = "<group>"; };
+		FEAFACBE145E52FB00207F22 /* GLVViewCam+Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLVViewCam+Render.mm"; sourceTree = "<group>"; };
+		FEAFAD46145E560F00207F22 /* BasicMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BasicMath.framework; path = ../../frameworks/BasicMath.framework; sourceTree = "<group>"; };
+		FEAFAD48145E589700207F22 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FEAFAD4A145E58AC00207F22 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FEAFAD4E145E58EE00207F22 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FEAFAD54145EF98D00207F22 /* GLVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLVision.framework; path = ../../frameworks/GLVision.framework; sourceTree = "<group>"; };
+		FEAFAD5A145FA43600207F22 /* TimeIntervalTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIntervalTracker.h; sourceTree = "<group>"; };
+		FEAFAD5B145FA43600207F22 /* TimeIntervalTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeIntervalTracker.cpp; sourceTree = "<group>"; };
+		FEFFB56714737823000E42BC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FEFFB56D14737974000E42BC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE00A8BD1468CB8500B058DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F606744618A80E4F00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F606742B18A8067800E830A3 /* See.framework in Frameworks */,
+				F60673EF18A7E75400E830A3 /* ImageIO.framework in Frameworks */,
+				F60673ED18A7E74C00E830A3 /* MobileCoreServices.framework in Frameworks */,
+				FE00A8F41468F2B600B058DA /* AssetsLibrary.framework in Frameworks */,
+				FE00A8F21468E2EF00B058DA /* Accelerate.framework in Frameworks */,
+				FE00A8E01468CBA400B058DA /* BasicMath.framework in Frameworks */,
+				FE00A8E81468CC6B00B058DA /* DataLogging.framework in Frameworks */,
+				FE00A8DC1468CBA400B058DA /* GLVision.framework in Frameworks */,
+				FE00A8DD1468CBA400B058DA /* CoreMedia.framework in Frameworks */,
+				FE00A8DE1468CBA400B058DA /* CoreVideo.framework in Frameworks */,
+				FE00A8DF1468CBA400B058DA /* AVFoundation.framework in Frameworks */,
+				FE00A8E11468CBA400B058DA /* CoreFoundation.framework in Frameworks */,
+				FE00A8E21468CBA400B058DA /* QuartzCore.framework in Frameworks */,
+				FE00A8E31468CBA400B058DA /* OpenGLES.framework in Frameworks */,
+				FE00A8C21468CB8500B058DA /* UIKit.framework in Frameworks */,
+				FE00A8C31468CB8500B058DA /* Foundation.framework in Frameworks */,
+				FE00A8C41468CB8500B058DA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE1C537C14538845004FED72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEAFAD55145EF98D00207F22 /* GLVision.framework in Frameworks */,
+				FEAFAD4F145E58EE00207F22 /* CoreMedia.framework in Frameworks */,
+				FEAFAD4B145E58AC00207F22 /* CoreVideo.framework in Frameworks */,
+				FEAFAD49145E589700207F22 /* AVFoundation.framework in Frameworks */,
+				FEAFAD47145E560F00207F22 /* BasicMath.framework in Frameworks */,
+				FE1C54591456E2F6004FED72 /* CoreFoundation.framework in Frameworks */,
+				FE1C545A1456E2F6004FED72 /* QuartzCore.framework in Frameworks */,
+				FE1C545B1456E2F6004FED72 /* OpenGLES.framework in Frameworks */,
+				FE1C545C1456E2F6004FED72 /* UIKit.framework in Frameworks */,
+				FE1C545D1456E2F6004FED72 /* Foundation.framework in Frameworks */,
+				FE1C545E1456E2F6004FED72 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE1C53FE145393C7004FED72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE00A8C51468CB8500B058DA /* TestSaliencyFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFB56D14737974000E42BC /* icon.png */,
+				FE00A8CE1468CB8500B058DA /* SeeTestSaliencyAppDelegate.h */,
+				FE00A8CF1468CB8500B058DA /* SeeTestSaliencyAppDelegate.mm */,
+				FE00A8D11468CB8500B058DA /* SeeTestSaliencyViewController.h */,
+				FE00A8D21468CB8500B058DA /* SeeTestSaliencyViewController.mm */,
+				FE00A8E91468CD1800B058DA /* RenderView.h */,
+				FE00A8EA1468CD1800B058DA /* RenderView.mm */,
+				FE00A8D41468CB8500B058DA /* SeeTestSaliencyViewController.xib */,
+				FE00A8C61468CB8500B058DA /* Supporting Files */,
+			);
+			path = TestSaliencyFeatures;
+			sourceTree = "<group>";
+		};
+		FE00A8C61468CB8500B058DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE00A8C71468CB8500B058DA /* TestSaliencyFeatures-Info.plist */,
+				FE00A8C81468CB8500B058DA /* InfoPlist.strings */,
+				FE00A8CB1468CB8500B058DA /* main.m */,
+				FE00A8CD1468CB8500B058DA /* TestSaliencyFeatures-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE1C537414538845004FED72 = {
+			isa = PBXGroup;
+			children = (
+				F64EFEEA1651415A00C0D1CC /* Default-568h@2x.png */,
+				FE1C53CF14538A87004FED72 /* GLVision */,
+				FE1C538914538845004FED72 /* BasicTestApp */,
+				FE00A8C51468CB8500B058DA /* TestSaliencyFeatures */,
+				FE1C5402145393C7004FED72 /* Frameworks */,
+				FE1C538014538845004FED72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE1C538014538845004FED72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE1C537F14538845004FED72 /* GLVTest.app */,
+				FE1C5401145393C7004FED72 /* GLVision.framework */,
+				FE00A8C01468CB8500B058DA /* GLVFeatures.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE1C538914538845004FED72 /* BasicTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFB56714737823000E42BC /* icon.png */,
+				FE1C539214538845004FED72 /* GLVAppDelegate.h */,
+				FE1C539314538845004FED72 /* GLVAppDelegate.mm */,
+				FE1C539514538845004FED72 /* GLVViewController.h */,
+				FE1C539614538845004FED72 /* GLVViewController.mm */,
+				FEAFACBD145E52FB00207F22 /* GLVViewCam+Render.h */,
+				FEAFACBE145E52FB00207F22 /* GLVViewCam+Render.mm */,
+				FEAFACBA145E4CB300207F22 /* ImageSource.h */,
+				FEAFACBB145E4CB300207F22 /* ImageSource.m */,
+				FEAFAD5A145FA43600207F22 /* TimeIntervalTracker.h */,
+				FEAFAD5B145FA43600207F22 /* TimeIntervalTracker.cpp */,
+				FE1C539814538845004FED72 /* GLVViewController.xib */,
+				FE1C538A14538845004FED72 /* Supporting Files */,
+			);
+			path = BasicTestApp;
+			sourceTree = "<group>";
+		};
+		FE1C538A14538845004FED72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE1C538B14538845004FED72 /* Framework-GLVision-Info.plist */,
+				FE1C538C14538845004FED72 /* InfoPlist.strings */,
+				FE1C538F14538845004FED72 /* main.m */,
+				FE1C539114538845004FED72 /* Framework-GLVision-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE1C53CF14538A87004FED72 /* GLVision */ = {
+			isa = PBXGroup;
+			children = (
+				FE1C543B14565D1E004FED72 /* Programs */,
+				FE1C53D914538AB5004FED72 /* GLVCommon.h */,
+				FE1C53DC14538AB5004FED72 /* GLVView.h */,
+				FE1C53DD14538AB5004FED72 /* GLVView.m */,
+				FE7B85A0146AEFF500F0E097 /* GLVViewCam.h */,
+				FE7B85A1146AEFF500F0E097 /* GLVViewCam.m */,
+				FE00A8B814684B4B00B058DA /* GLVViewSaliency.h */,
+				FE00A8B914684B4B00B058DA /* GLVViewSaliency.mm */,
+				F6437F20150031B000EE1589 /* GLVViewResizeGray.h */,
+				F6437F21150031B000EE1589 /* GLVViewResizeGray.mm */,
+				FE1C541E1453C442004FED72 /* GLVEngine.h */,
+				FE1C541F1453C442004FED72 /* GLVEngine.m */,
+				FE1C5406145393C7004FED72 /* Supporting Files */,
+			);
+			path = GLVision;
+			sourceTree = "<group>";
+		};
+		FE1C5402145393C7004FED72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F606744518A80E4F00E830A3 /* libstdc++.6.0.9.dylib */,
+				F606742518A7FFDC00E830A3 /* libstdc++.6.dylib */,
+				F606742318A7F9E100E830A3 /* libstdc++.dylib */,
+				F60673EE18A7E75400E830A3 /* ImageIO.framework */,
+				F60673EC18A7E74C00E830A3 /* MobileCoreServices.framework */,
+				F6437F25150037E600EE1589 /* BasicMath.framework */,
+				FE00A8F31468F2B600B058DA /* AssetsLibrary.framework */,
+				FE00A8F11468E2EF00B058DA /* Accelerate.framework */,
+				FE00A8E71468CC6B00B058DA /* DataLogging.framework */,
+				FE00A8E51468CBB600B058DA /* See.framework */,
+				FEAFAD54145EF98D00207F22 /* GLVision.framework */,
+				FEAFAD4E145E58EE00207F22 /* CoreMedia.framework */,
+				FEAFAD4A145E58AC00207F22 /* CoreVideo.framework */,
+				FEAFAD48145E589700207F22 /* AVFoundation.framework */,
+				FEAFAD46145E560F00207F22 /* BasicMath.framework */,
+				FE1C5403145393C7004FED72 /* CoreFoundation.framework */,
+				FE1C53F114538F49004FED72 /* QuartzCore.framework */,
+				FE1C53EF14538F3E004FED72 /* OpenGLES.framework */,
+				FE1C538314538845004FED72 /* UIKit.framework */,
+				FE1C538514538845004FED72 /* Foundation.framework */,
+				FE1C538714538845004FED72 /* CoreGraphics.framework */,
+				FE1C53AB145388C4004FED72 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE1C5406145393C7004FED72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE1C5407145393C7004FED72 /* GLVision-Info.plist */,
+				FE1C5408145393C7004FED72 /* InfoPlist.strings */,
+				FE1C540B145393C7004FED72 /* GLVision-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE1C543B14565D1E004FED72 /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+				FE1C53DA14538AB5004FED72 /* GLVProgramHandler.h */,
+				FE1C53DB14538AB5004FED72 /* GLVProgramHandler.mm */,
+				FE1C54431456B2D4004FED72 /* GLVPrograms.h */,
+				FE1C54481456C87A004FED72 /* GLVProgramTexture.h */,
+				FE1C54491456C87A004FED72 /* GLVProgramTexture.mm */,
+				FE1C543714565D15004FED72 /* GLVProgramGray.h */,
+				FE1C543814565D15004FED72 /* GLVProgramGray.mm */,
+				FE00A8B1146842C700B058DA /* GLVProgramSaliencyFeatures.h */,
+				FE00A8B2146842C700B058DA /* GLVProgramSaliencyFeatures.mm */,
+				FE1C544E1456D661004FED72 /* Shaders */,
+			);
+			name = Programs;
+			sourceTree = "<group>";
+		};
+		FE1C544E1456D661004FED72 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				FE1C544F1456D661004FED72 /* gray.fsh */,
+				FE1C54501456D661004FED72 /* texture.fsh */,
+				FE1C54511456D661004FED72 /* texturedProjection.vsh */,
+				FEAFACB1145DB2B200207F22 /* texture.vsh */,
+				FE00A8B61468438200B058DA /* saliencyFeatures.fsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FE1C5411145394DF004FED72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7B85A5146B14D200F0E097 /* GLVViewSaliency.h in Headers */,
+				FE1C5412145394E5004FED72 /* GLVCommon.h in Headers */,
+				FE1C5414145394E8004FED72 /* GLVView.h in Headers */,
+				FE7B85A2146AEFF500F0E097 /* GLVViewCam.h in Headers */,
+				FE1C54201453C442004FED72 /* GLVEngine.h in Headers */,
+				FE1C54441456B2D5004FED72 /* GLVPrograms.h in Headers */,
+				FE1C5413145394E6004FED72 /* GLVProgramHandler.h in Headers */,
+				FE00A8B3146842C700B058DA /* GLVProgramSaliencyFeatures.h in Headers */,
+				FE1C544A1456C87B004FED72 /* GLVProgramTexture.h in Headers */,
+				FE1C543914565D15004FED72 /* GLVProgramGray.h in Headers */,
+				F6437F22150031B000EE1589 /* GLVViewResizeGray.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FE00A8BF1468CB8500B058DA /* GLVFeatures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE00A8D71468CB8500B058DA /* Build configuration list for PBXNativeTarget "GLVFeatures" */;
+			buildPhases = (
+				FE00A8BC1468CB8500B058DA /* Sources */,
+				FE00A8BD1468CB8500B058DA /* Frameworks */,
+				FE00A8BE1468CB8500B058DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FECE103314699AA700B7C394 /* PBXTargetDependency */,
+			);
+			name = GLVFeatures;
+			productName = TestSaliencyFeatures;
+			productReference = FE00A8C01468CB8500B058DA /* GLVFeatures.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE1C537E14538845004FED72 /* GLVTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE1C539D14538845004FED72 /* Build configuration list for PBXNativeTarget "GLVTest" */;
+			buildPhases = (
+				FE1C537B14538845004FED72 /* Sources */,
+				FE1C537C14538845004FED72 /* Frameworks */,
+				FE1C537D14538845004FED72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FECE103114699AA300B7C394 /* PBXTargetDependency */,
+			);
+			name = GLVTest;
+			productName = "Framework-GLVision";
+			productReference = FE1C537F14538845004FED72 /* GLVTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE1C5400145393C7004FED72 /* GLVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE1C540C145393C7004FED72 /* Build configuration list for PBXNativeTarget "GLVision" */;
+			buildPhases = (
+				FE1C53FD145393C7004FED72 /* Sources */,
+				FE1C53FE145393C7004FED72 /* Frameworks */,
+				FE1C53FF145393C7004FED72 /* Resources */,
+				FE1C5411145394DF004FED72 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLVision;
+			productName = GLVision;
+			productReference = FE1C5401145393C7004FED72 /* GLVision.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE1C537614538845004FED72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Robotics Institute. Carnegie Mellon University";
+			};
+			buildConfigurationList = FE1C537914538845004FED72 /* Build configuration list for PBXProject "Framework-GLVision" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE1C537414538845004FED72;
+			productRefGroup = FE1C538014538845004FED72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE1C5400145393C7004FED72 /* GLVision */,
+				FECE102B14699A9100B7C394 /* Framework Aggregate */,
+				FE1C537E14538845004FED72 /* GLVTest */,
+				FE00A8BF1468CB8500B058DA /* GLVFeatures */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE00A8BE1468CB8500B058DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE00A8CA1468CB8500B058DA /* InfoPlist.strings in Resources */,
+				FE00A8D61468CB8500B058DA /* SeeTestSaliencyViewController.xib in Resources */,
+				FE00A8FC1469162200B058DA /* GLVision.framework in Resources */,
+				FEFFB56E14737974000E42BC /* icon.png in Resources */,
+				F64EFF151651CB5E00C0D1CC /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE1C537D14538845004FED72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1C538E14538845004FED72 /* InfoPlist.strings in Resources */,
+				FE1C539A14538845004FED72 /* GLVViewController.xib in Resources */,
+				FEAFAD59145EFAD700207F22 /* GLVision.framework in Resources */,
+				FEFFB56814737823000E42BC /* icon.png in Resources */,
+				F64EFEEB1651415A00C0D1CC /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE1C53FF145393C7004FED72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1C54641456E3CD004FED72 /* gray.fsh in Resources */,
+				FE1C54651456E3CD004FED72 /* texture.fsh in Resources */,
+				FEAFACB2145DB35A00207F22 /* texture.vsh in Resources */,
+				FE1C54661456E3CD004FED72 /* texturedProjection.vsh in Resources */,
+				FE00A8B71468438200B058DA /* saliencyFeatures.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FECE102F14699A9A00B7C394 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=GLVision\nFMK_VERSION=A\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/../../frameworks/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE00A8BC1468CB8500B058DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE00A8CC1468CB8500B058DA /* main.m in Sources */,
+				FE00A8D01468CB8500B058DA /* SeeTestSaliencyAppDelegate.mm in Sources */,
+				FE00A8D31468CB8500B058DA /* SeeTestSaliencyViewController.mm in Sources */,
+				FE00A8EB1468CD1800B058DA /* RenderView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE1C537B14538845004FED72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1C539014538845004FED72 /* main.m in Sources */,
+				FEAFACBC145E4CB300207F22 /* ImageSource.m in Sources */,
+				FEAFAD56145EFA7E00207F22 /* GLVAppDelegate.mm in Sources */,
+				FEAFAD57145EFA8100207F22 /* GLVViewController.mm in Sources */,
+				FEAFAD58145EFA8700207F22 /* GLVViewCam+Render.mm in Sources */,
+				FEAFAD5C145FA43700207F22 /* TimeIntervalTracker.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE1C53FD145393C7004FED72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1C540F145394DA004FED72 /* GLVProgramHandler.mm in Sources */,
+				FE1C5410145394DB004FED72 /* GLVView.m in Sources */,
+				FE1C54211453C442004FED72 /* GLVEngine.m in Sources */,
+				FE1C543A14565D15004FED72 /* GLVProgramGray.mm in Sources */,
+				FE1C544B1456C87B004FED72 /* GLVProgramTexture.mm in Sources */,
+				FE00A8B4146842C700B058DA /* GLVProgramSaliencyFeatures.mm in Sources */,
+				FE7B85A3146AEFF500F0E097 /* GLVViewCam.m in Sources */,
+				FE7B85A6146B14E000F0E097 /* GLVViewSaliency.mm in Sources */,
+				F6437F23150031B000EE1589 /* GLVViewResizeGray.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FECE103114699AA300B7C394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FECE102B14699A9100B7C394 /* Framework Aggregate */;
+			targetProxy = FECE103014699AA300B7C394 /* PBXContainerItemProxy */;
+		};
+		FECE103314699AA700B7C394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FECE102B14699A9100B7C394 /* Framework Aggregate */;
+			targetProxy = FECE103214699AA700B7C394 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE00A8C81468CB8500B058DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE00A8C91468CB8500B058DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE00A8D41468CB8500B058DA /* SeeTestSaliencyViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE00A8D51468CB8500B058DA /* en */,
+			);
+			name = SeeTestSaliencyViewController.xib;
+			sourceTree = "<group>";
+		};
+		FE1C538C14538845004FED72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE1C538D14538845004FED72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE1C539814538845004FED72 /* GLVViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE1C539914538845004FED72 /* en */,
+			);
+			name = GLVViewController.xib;
+			sourceTree = "<group>";
+		};
+		FE1C5408145393C7004FED72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE1C5409145393C7004FED72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE00A8D81468CB8500B058DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/../../frameworks\\\"",
+					"/Users/marynelv/Documents/Repos/RERC-APT/code/frameworks/frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestSaliencyFeatures/TestSaliencyFeatures-Prefix.pch";
+				INFOPLIST_FILE = "TestSaliencyFeatures/TestSaliencyFeatures-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = GLVFeatures;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE00A8D91468CB8500B058DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/../../frameworks\\\"",
+					"/Users/marynelv/Documents/Repos/RERC-APT/code/frameworks/frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestSaliencyFeatures/TestSaliencyFeatures-Prefix.pch";
+				INFOPLIST_FILE = "TestSaliencyFeatures/TestSaliencyFeatures-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = GLVFeatures;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FE1C539B14538845004FED72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE1C539C14538845004FED72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE1C539E14538845004FED72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicTestApp/Framework-GLVision-Prefix.pch";
+				INFOPLIST_FILE = "BasicTestApp/Framework-GLVision-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = GLVTest;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE1C539F14538845004FED72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicTestApp/Framework-GLVision-Prefix.pch";
+				INFOPLIST_FILE = "BasicTestApp/Framework-GLVision-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = GLVTest;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FE1C540D145393C7004FED72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLVision/GLVision-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "GLVision/GLVision-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		FE1C540E145393C7004FED72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLVision/GLVision-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "GLVision/GLVision-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		FECE102D14699A9100B7C394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.0;
+			};
+			name = Debug;
+		};
+		FECE102E14699A9100B7C394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE00A8D71468CB8500B058DA /* Build configuration list for PBXNativeTarget "GLVFeatures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE00A8D81468CB8500B058DA /* Debug */,
+				FE00A8D91468CB8500B058DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE1C537914538845004FED72 /* Build configuration list for PBXProject "Framework-GLVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1C539B14538845004FED72 /* Debug */,
+				FE1C539C14538845004FED72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE1C539D14538845004FED72 /* Build configuration list for PBXNativeTarget "GLVTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1C539E14538845004FED72 /* Debug */,
+				FE1C539F14538845004FED72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE1C540C145393C7004FED72 /* Build configuration list for PBXNativeTarget "GLVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1C540D145393C7004FED72 /* Debug */,
+				FE1C540E145393C7004FED72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FECE102C14699A9100B7C394 /* Build configuration list for PBXAggregateTarget "Framework Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECE102D14699A9100B7C394 /* Debug */,
+				FECE102E14699A9100B7C394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE1C537614538845004FED72 /* Project object */;
+}
