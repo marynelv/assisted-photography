@@ -141,7 +141,7 @@ img see_intensity(const img r, const img g, const img b, size_t size)
 	vDSP_vadd(r,1,g,1,intensity,1,size);
 	vDSP_vadd(intensity,1,b,1,intensity,1,size);
 	// use mean(r,g,b)
-	cblas_sscal(size, 1.0/3.0, intensity, 1); 
+	cblas_sscal((int)size, 1.0/3.0, intensity, 1);
 	return intensity;
 }
 
