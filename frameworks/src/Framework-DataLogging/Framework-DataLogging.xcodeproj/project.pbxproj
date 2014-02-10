@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		FE093DFB1466C181008630E9 /* Build Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FE093DFC1466C181008630E9 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */;
+			buildPhases = (
+				FE093DFF1466C189008630E9 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build Aggregate";
+			productName = "Build Aggregate";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F6330D9614C5D082009EAFD0 /* DLLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F6330D9414C5D082009EAFD0 /* DLLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6330D9714C5D082009EAFD0 /* DLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F6330D9514C5D082009EAFD0 /* DLLog.m */; };
+		F646FD2F14F5E6F000D2D7FE /* DLTiming.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE093E051466CC3C008630E9 /* DLTiming.cpp */; };
+		F646FD3114F5E6F400D2D7FE /* DLTiming.h in Headers */ = {isa = PBXBuildFile; fileRef = FE093E041466CC0E008630E9 /* DLTiming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F646FD3214F5E6FB00D2D7FE /* DLFramesPerSecond.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE093E001466C200008630E9 /* DLFramesPerSecond.cpp */; };
+		F646FD3314F5E6FD00D2D7FE /* DLFramesPerSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = FE093E011466C200008630E9 /* DLFramesPerSecond.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65B4CFC14CA2A8900C5A7D6 /* DLTextLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F65B4CFA14CA2A8900C5A7D6 /* DLTextLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65B4CFD14CA2A8900C5A7D6 /* DLTextLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = F65B4CFB14CA2A8900C5A7D6 /* DLTextLog.mm */; };
+		F65B4D0114CA2E5B00C5A7D6 /* DLFrameLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F65B4CFF14CA2E5B00C5A7D6 /* DLFrameLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65B4D0214CA2E5B00C5A7D6 /* DLFrameLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = F65B4D0014CA2E5B00C5A7D6 /* DLFrameLog.mm */; };
+		F65B4D0514CCEBAA00C5A7D6 /* DLInertialLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F65B4D0314CCEBAA00C5A7D6 /* DLInertialLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65B4D0614CCEBAA00C5A7D6 /* DLInertialLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = F65B4D0414CCEBAA00C5A7D6 /* DLInertialLog.mm */; };
+		F65B4D0914CCEFBA00C5A7D6 /* DLDeviceMotionLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F65B4D0714CCEFBA00C5A7D6 /* DLDeviceMotionLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65B4D0A14CCEFBA00C5A7D6 /* DLDeviceMotionLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F65B4D0814CCEFBA00C5A7D6 /* DLDeviceMotionLog.m */; };
+		FE093E021466C200008630E9 /* DLFramesPerSecond.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE093E001466C200008630E9 /* DLFramesPerSecond.cpp */; };
+		FE093E061466CC3C008630E9 /* DLTiming.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE093E051466CC3C008630E9 /* DLTiming.cpp */; };
+		FE093E081466D062008630E9 /* DLTiming.h in Headers */ = {isa = PBXBuildFile; fileRef = FE093E041466CC0E008630E9 /* DLTiming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE093E091466D064008630E9 /* DLFramesPerSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = FE093E011466C200008630E9 /* DLFramesPerSecond.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F6330D9414C5D082009EAFD0 /* DLLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLLog.h; sourceTree = "<group>"; };
+		F6330D9514C5D082009EAFD0 /* DLLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLog.m; sourceTree = "<group>"; };
+		F646FD2714F5E6E500D2D7FE /* libdatalogging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdatalogging.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65B4CFA14CA2A8900C5A7D6 /* DLTextLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTextLog.h; sourceTree = "<group>"; };
+		F65B4CFB14CA2A8900C5A7D6 /* DLTextLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DLTextLog.mm; sourceTree = "<group>"; };
+		F65B4CFF14CA2E5B00C5A7D6 /* DLFrameLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLFrameLog.h; sourceTree = "<group>"; };
+		F65B4D0014CA2E5B00C5A7D6 /* DLFrameLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DLFrameLog.mm; sourceTree = "<group>"; };
+		F65B4D0314CCEBAA00C5A7D6 /* DLInertialLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLInertialLog.h; sourceTree = "<group>"; };
+		F65B4D0414CCEBAA00C5A7D6 /* DLInertialLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DLInertialLog.mm; sourceTree = "<group>"; };
+		F65B4D0714CCEFBA00C5A7D6 /* DLDeviceMotionLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLDeviceMotionLog.h; sourceTree = "<group>"; };
+		F65B4D0814CCEFBA00C5A7D6 /* DLDeviceMotionLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLDeviceMotionLog.m; sourceTree = "<group>"; };
+		F67123F814D0EF480054F92C /* BasicMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BasicMath.framework; path = ../../frameworks/BasicMath.framework; sourceTree = "<group>"; };
+		FE093DEC1466C12B008630E9 /* DataLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE093DEF1466C12B008630E9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FE093DF31466C12B008630E9 /* DataLogging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataLogging-Info.plist"; sourceTree = "<group>"; };
+		FE093DF51466C12B008630E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE093DF71466C12B008630E9 /* DataLogging-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataLogging-Prefix.pch"; sourceTree = "<group>"; };
+		FE093E001466C200008630E9 /* DLFramesPerSecond.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DLFramesPerSecond.cpp; sourceTree = "<group>"; };
+		FE093E011466C200008630E9 /* DLFramesPerSecond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLFramesPerSecond.h; sourceTree = "<group>"; };
+		FE093E041466CC0E008630E9 /* DLTiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTiming.h; sourceTree = "<group>"; };
+		FE093E051466CC3C008630E9 /* DLTiming.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DLTiming.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F646FD2414F5E6E500D2D7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE093DE91466C12B008630E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE093DDF1466C10A008630E9 = {
+			isa = PBXGroup;
+			children = (
+				FE093DF11466C12B008630E9 /* DataLogging */,
+				FE093DEE1466C12B008630E9 /* Frameworks */,
+				FE093DED1466C12B008630E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE093DED1466C12B008630E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE093DEC1466C12B008630E9 /* DataLogging.framework */,
+				F646FD2714F5E6E500D2D7FE /* libdatalogging.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE093DEE1466C12B008630E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F67123F814D0EF480054F92C /* BasicMath.framework */,
+				FE093DEF1466C12B008630E9 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE093DF11466C12B008630E9 /* DataLogging */ = {
+			isa = PBXGroup;
+			children = (
+				F6330D9414C5D082009EAFD0 /* DLLog.h */,
+				F6330D9514C5D082009EAFD0 /* DLLog.m */,
+				F65B4CFA14CA2A8900C5A7D6 /* DLTextLog.h */,
+				F65B4CFB14CA2A8900C5A7D6 /* DLTextLog.mm */,
+				F65B4CFF14CA2E5B00C5A7D6 /* DLFrameLog.h */,
+				F65B4D0014CA2E5B00C5A7D6 /* DLFrameLog.mm */,
+				F65B4D0314CCEBAA00C5A7D6 /* DLInertialLog.h */,
+				F65B4D0414CCEBAA00C5A7D6 /* DLInertialLog.mm */,
+				F65B4D0714CCEFBA00C5A7D6 /* DLDeviceMotionLog.h */,
+				F65B4D0814CCEFBA00C5A7D6 /* DLDeviceMotionLog.m */,
+				FE093E041466CC0E008630E9 /* DLTiming.h */,
+				FE093E051466CC3C008630E9 /* DLTiming.cpp */,
+				FE093E011466C200008630E9 /* DLFramesPerSecond.h */,
+				FE093E001466C200008630E9 /* DLFramesPerSecond.cpp */,
+				FE093DF21466C12B008630E9 /* Supporting Files */,
+			);
+			path = DataLogging;
+			sourceTree = "<group>";
+		};
+		FE093DF21466C12B008630E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE093DF31466C12B008630E9 /* DataLogging-Info.plist */,
+				FE093DF41466C12B008630E9 /* InfoPlist.strings */,
+				FE093DF71466C12B008630E9 /* DataLogging-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F646FD2514F5E6E500D2D7FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F646FD3114F5E6F400D2D7FE /* DLTiming.h in Headers */,
+				F646FD3314F5E6FD00D2D7FE /* DLFramesPerSecond.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE093E071466D05D008630E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE093E081466D062008630E9 /* DLTiming.h in Headers */,
+				FE093E091466D064008630E9 /* DLFramesPerSecond.h in Headers */,
+				F65B4CFC14CA2A8900C5A7D6 /* DLTextLog.h in Headers */,
+				F6330D9614C5D082009EAFD0 /* DLLog.h in Headers */,
+				F65B4D0514CCEBAA00C5A7D6 /* DLInertialLog.h in Headers */,
+				F65B4D0914CCEFBA00C5A7D6 /* DLDeviceMotionLog.h in Headers */,
+				F65B4D0114CA2E5B00C5A7D6 /* DLFrameLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F646FD2614F5E6E500D2D7FE /* DataLogging Static Lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F646FD2A14F5E6E600D2D7FE /* Build configuration list for PBXNativeTarget "DataLogging Static Lib" */;
+			buildPhases = (
+				F646FD2314F5E6E500D2D7FE /* Sources */,
+				F646FD2414F5E6E500D2D7FE /* Frameworks */,
+				F646FD2514F5E6E500D2D7FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DataLogging Static Lib";
+			productName = "DataLogging Static Lib";
+			productReference = F646FD2714F5E6E500D2D7FE /* libdatalogging.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE093DEB1466C12B008630E9 /* DataLogging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE093DF81466C12B008630E9 /* Build configuration list for PBXNativeTarget "DataLogging" */;
+			buildPhases = (
+				FE093DE81466C12B008630E9 /* Sources */,
+				FE093DE91466C12B008630E9 /* Frameworks */,
+				FE093DEA1466C12B008630E9 /* Resources */,
+				FE093E071466D05D008630E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataLogging;
+			productName = DataLogging;
+			productReference = FE093DEC1466C12B008630E9 /* DataLogging.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE093DE11466C10A008630E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Robotics Institute. Carnegie Mellon University";
+			};
+			buildConfigurationList = FE093DE41466C10A008630E9 /* Build configuration list for PBXProject "Framework-DataLogging" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE093DDF1466C10A008630E9;
+			productRefGroup = FE093DED1466C12B008630E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE093DEB1466C12B008630E9 /* DataLogging */,
+				FE093DFB1466C181008630E9 /* Build Aggregate */,
+				F646FD2614F5E6E500D2D7FE /* DataLogging Static Lib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE093DEA1466C12B008630E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE093DFF1466C189008630E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=DataLogging\nFMK_VERSION=A\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/../../frameworks/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F646FD2314F5E6E500D2D7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F646FD2F14F5E6F000D2D7FE /* DLTiming.cpp in Sources */,
+				F646FD3214F5E6FB00D2D7FE /* DLFramesPerSecond.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE093DE81466C12B008630E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE093E021466C200008630E9 /* DLFramesPerSecond.cpp in Sources */,
+				FE093E061466CC3C008630E9 /* DLTiming.cpp in Sources */,
+				F6330D9714C5D082009EAFD0 /* DLLog.m in Sources */,
+				F65B4CFD14CA2A8900C5A7D6 /* DLTextLog.mm in Sources */,
+				F65B4D0214CA2E5B00C5A7D6 /* DLFrameLog.mm in Sources */,
+				F65B4D0614CCEBAA00C5A7D6 /* DLInertialLog.mm in Sources */,
+				F65B4D0A14CCEFBA00C5A7D6 /* DLDeviceMotionLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE093DF41466C12B008630E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE093DF51466C12B008630E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F646FD2814F5E6E600D2D7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../static_libs/DataLogging/lib";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = datalogging;
+				PUBLIC_HEADERS_FOLDER_PATH = ../include/DataLogging;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F646FD2914F5E6E600D2D7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = datalogging;
+				PUBLIC_HEADERS_FOLDER_PATH = ../include/DataLogging;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FE093DE61466C10A008630E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE093DE71466C10A008630E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FE093DF91466C12B008630E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataLogging/DataLogging-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "DataLogging/DataLogging-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		FE093DFA1466C12B008630E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataLogging/DataLogging-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "DataLogging/DataLogging-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		FE093DFD1466C181008630E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE093DFE1466C181008630E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F646FD2A14F5E6E600D2D7FE /* Build configuration list for PBXNativeTarget "DataLogging Static Lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F646FD2814F5E6E600D2D7FE /* Debug */,
+				F646FD2914F5E6E600D2D7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE093DE41466C10A008630E9 /* Build configuration list for PBXProject "Framework-DataLogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE093DE61466C10A008630E9 /* Debug */,
+				FE093DE71466C10A008630E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE093DF81466C12B008630E9 /* Build configuration list for PBXNativeTarget "DataLogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE093DF91466C12B008630E9 /* Debug */,
+				FE093DFA1466C12B008630E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE093DFC1466C181008630E9 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE093DFD1466C181008630E9 /* Debug */,
+				FE093DFE1466C181008630E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE093DE11466C10A008630E9 /* Project object */;
+}
