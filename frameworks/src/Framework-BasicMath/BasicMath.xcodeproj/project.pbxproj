@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		FEAFAD41145E557400207F22 /* Build Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FEAFAD42145E557400207F22 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */;
+			buildPhases = (
+				FEAFAD45145E557900207F22 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build Aggregate";
+			productName = "Build Aggregate";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F646FD1614F5E29600D2D7FE /* Matrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD33145E54C500207F22 /* Matrix4.cpp */; };
+		F646FD1814F5E29800D2D7FE /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD35145E54C500207F22 /* Quaternion.cpp */; };
+		F646FD1914F5E29A00D2D7FE /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD37145E54C500207F22 /* Vector3.cpp */; };
+		F646FD1A14F5E29C00D2D7FE /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE192227148DCD52009714E4 /* Vector2.cpp */; };
+		F646FD1B14F5E29F00D2D7FE /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE192258148E62A9009714E4 /* Rectangle.cpp */; };
+		F646FD1C14F5E2A500D2D7FE /* Matrix4.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD34145E54C500207F22 /* Matrix4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F646FD1D14F5E2A700D2D7FE /* Quaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD36145E54C500207F22 /* Quaternion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F646FD1E14F5E2AC00D2D7FE /* Vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD38145E54C500207F22 /* Vector3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F646FD1F14F5E2B000D2D7FE /* Vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = FE192224148DCD46009714E4 /* Vector2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F646FD2014F5E2B200D2D7FE /* Rectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = FE192256148E629F009714E4 /* Rectangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F64EFEF216514E1300C0D1CC /* OCVector3.h in Headers */ = {isa = PBXBuildFile; fileRef = F64EFEF016514E1300C0D1CC /* OCVector3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F64EFEF316514E1300C0D1CC /* OCVector3.mm in Sources */ = {isa = PBXBuildFile; fileRef = F64EFEF116514E1300C0D1CC /* OCVector3.mm */; };
+		F64EFEF4165150DA00C0D1CC /* OCVector3.mm in Sources */ = {isa = PBXBuildFile; fileRef = F64EFEF116514E1300C0D1CC /* OCVector3.mm */; };
+		F64EFEF51651519D00C0D1CC /* OCVector3.h in Headers */ = {isa = PBXBuildFile; fileRef = F64EFEF016514E1300C0D1CC /* OCVector3.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FE192225148DCD46009714E4 /* Vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = FE192224148DCD46009714E4 /* Vector2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE192228148DCD52009714E4 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE192227148DCD52009714E4 /* Vector2.cpp */; };
+		FE192257148E629F009714E4 /* Rectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = FE192256148E629F009714E4 /* Rectangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE192259148E62A9009714E4 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE192258148E62A9009714E4 /* Rectangle.cpp */; };
+		FEAFAD39145E54C500207F22 /* Matrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD33145E54C500207F22 /* Matrix4.cpp */; };
+		FEAFAD3A145E54C500207F22 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD35145E54C500207F22 /* Quaternion.cpp */; };
+		FEAFAD3B145E54C500207F22 /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEAFAD37145E54C500207F22 /* Vector3.cpp */; };
+		FEAFAD3E145E54D500207F22 /* Matrix4.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD34145E54C500207F22 /* Matrix4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEAFAD3F145E54D700207F22 /* Quaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD36145E54C500207F22 /* Quaternion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEAFAD40145E54E000207F22 /* Vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAFAD38145E54C500207F22 /* Vector3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F646FD0E14F5E28900D2D7FE /* libbasicmath.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbasicmath.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64EFEF016514E1300C0D1CC /* OCVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVector3.h; sourceTree = "<group>"; };
+		F64EFEF116514E1300C0D1CC /* OCVector3.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVector3.mm; sourceTree = "<group>"; };
+		FE192224148DCD46009714E4 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
+		FE192227148DCD52009714E4 /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
+		FE192256148E629F009714E4 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		FE192258148E62A9009714E4 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		FEAFAD1F145E546400207F22 /* BasicMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEAFAD22145E546400207F22 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FEAFAD26145E546400207F22 /* BasicMath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasicMath-Info.plist"; sourceTree = "<group>"; };
+		FEAFAD28145E546400207F22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEAFAD2A145E546400207F22 /* BasicMath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicMath-Prefix.pch"; sourceTree = "<group>"; };
+		FEAFAD33145E54C500207F22 /* Matrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix4.cpp; sourceTree = "<group>"; };
+		FEAFAD34145E54C500207F22 /* Matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix4.h; sourceTree = "<group>"; };
+		FEAFAD35145E54C500207F22 /* Quaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Quaternion.cpp; sourceTree = "<group>"; };
+		FEAFAD36145E54C500207F22 /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
+		FEAFAD37145E54C500207F22 /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
+		FEAFAD38145E54C500207F22 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F646FD0B14F5E28900D2D7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFAD1C145E546400207F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEAFAD14145E546400207F22 = {
+			isa = PBXGroup;
+			children = (
+				FEAFAD24145E546400207F22 /* BasicMath */,
+				FEAFAD21145E546400207F22 /* Frameworks */,
+				FEAFAD20145E546400207F22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEAFAD20145E546400207F22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFAD1F145E546400207F22 /* BasicMath.framework */,
+				F646FD0E14F5E28900D2D7FE /* libbasicmath.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEAFAD21145E546400207F22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFAD22145E546400207F22 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEAFAD24145E546400207F22 /* BasicMath */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFAD33145E54C500207F22 /* Matrix4.cpp */,
+				FEAFAD34145E54C500207F22 /* Matrix4.h */,
+				FEAFAD35145E54C500207F22 /* Quaternion.cpp */,
+				FEAFAD36145E54C500207F22 /* Quaternion.h */,
+				FEAFAD37145E54C500207F22 /* Vector3.cpp */,
+				FEAFAD38145E54C500207F22 /* Vector3.h */,
+				F64EFEF016514E1300C0D1CC /* OCVector3.h */,
+				F64EFEF116514E1300C0D1CC /* OCVector3.mm */,
+				FE192227148DCD52009714E4 /* Vector2.cpp */,
+				FE192224148DCD46009714E4 /* Vector2.h */,
+				FE192258148E62A9009714E4 /* Rectangle.cpp */,
+				FE192256148E629F009714E4 /* Rectangle.h */,
+				FEAFAD25145E546400207F22 /* Supporting Files */,
+			);
+			path = BasicMath;
+			sourceTree = "<group>";
+		};
+		FEAFAD25145E546400207F22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFAD26145E546400207F22 /* BasicMath-Info.plist */,
+				FEAFAD27145E546400207F22 /* InfoPlist.strings */,
+				FEAFAD2A145E546400207F22 /* BasicMath-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F646FD0C14F5E28900D2D7FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F646FD1C14F5E2A500D2D7FE /* Matrix4.h in Headers */,
+				F646FD1D14F5E2A700D2D7FE /* Quaternion.h in Headers */,
+				F646FD1E14F5E2AC00D2D7FE /* Vector3.h in Headers */,
+				F646FD2014F5E2B200D2D7FE /* Rectangle.h in Headers */,
+				F646FD1F14F5E2B000D2D7FE /* Vector2.h in Headers */,
+				F64EFEF51651519D00C0D1CC /* OCVector3.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFAD3D145E54D100207F22 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEAFAD3E145E54D500207F22 /* Matrix4.h in Headers */,
+				FEAFAD3F145E54D700207F22 /* Quaternion.h in Headers */,
+				FE192225148DCD46009714E4 /* Vector2.h in Headers */,
+				FEAFAD40145E54E000207F22 /* Vector3.h in Headers */,
+				FE192257148E629F009714E4 /* Rectangle.h in Headers */,
+				F64EFEF216514E1300C0D1CC /* OCVector3.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F646FD0D14F5E28900D2D7FE /* BasicMath Static Lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F646FD1114F5E28900D2D7FE /* Build configuration list for PBXNativeTarget "BasicMath Static Lib" */;
+			buildPhases = (
+				F646FD0A14F5E28900D2D7FE /* Sources */,
+				F646FD0B14F5E28900D2D7FE /* Frameworks */,
+				F646FD0C14F5E28900D2D7FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BasicMath Static Lib";
+			productName = "BasicMath Static Lib";
+			productReference = F646FD0E14F5E28900D2D7FE /* libbasicmath.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FEAFAD1E145E546400207F22 /* BasicMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEAFAD2D145E546400207F22 /* Build configuration list for PBXNativeTarget "BasicMath" */;
+			buildPhases = (
+				FEAFAD1B145E546400207F22 /* Sources */,
+				FEAFAD1C145E546400207F22 /* Frameworks */,
+				FEAFAD1D145E546400207F22 /* Resources */,
+				FEAFAD3D145E54D100207F22 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicMath;
+			productName = BasicMath;
+			productReference = FEAFAD1F145E546400207F22 /* BasicMath.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEAFAD16145E546400207F22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Robotics Institute. Carnegie Mellon University";
+			};
+			buildConfigurationList = FEAFAD19145E546400207F22 /* Build configuration list for PBXProject "BasicMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEAFAD14145E546400207F22;
+			productRefGroup = FEAFAD20145E546400207F22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEAFAD1E145E546400207F22 /* BasicMath */,
+				FEAFAD41145E557400207F22 /* Build Aggregate */,
+				F646FD0D14F5E28900D2D7FE /* BasicMath Static Lib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEAFAD1D145E546400207F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FEAFAD45145E557900207F22 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=BasicMath\nFMK_VERSION=A\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/../../frameworks/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F646FD0A14F5E28900D2D7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F646FD1614F5E29600D2D7FE /* Matrix4.cpp in Sources */,
+				F646FD1814F5E29800D2D7FE /* Quaternion.cpp in Sources */,
+				F646FD1914F5E29A00D2D7FE /* Vector3.cpp in Sources */,
+				F646FD1A14F5E29C00D2D7FE /* Vector2.cpp in Sources */,
+				F646FD1B14F5E29F00D2D7FE /* Rectangle.cpp in Sources */,
+				F64EFEF4165150DA00C0D1CC /* OCVector3.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAFAD1B145E546400207F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEAFAD39145E54C500207F22 /* Matrix4.cpp in Sources */,
+				FEAFAD3A145E54C500207F22 /* Quaternion.cpp in Sources */,
+				FEAFAD3B145E54C500207F22 /* Vector3.cpp in Sources */,
+				FE192228148DCD52009714E4 /* Vector2.cpp in Sources */,
+				FE192259148E62A9009714E4 /* Rectangle.cpp in Sources */,
+				F64EFEF316514E1300C0D1CC /* OCVector3.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEAFAD27145E546400207F22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEAFAD28145E546400207F22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F646FD0F14F5E28900D2D7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../static_libs/BasicMath/lib";
+				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "";
+				PRIVATE_HEADERS_FOLDER_PATH = include;
+				PRODUCT_NAME = basicmath;
+				PUBLIC_HEADERS_FOLDER_PATH = ../include/BasicMath;
+			};
+			name = Debug;
+		};
+		F646FD1014F5E28900D2D7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRIVATE_HEADERS_FOLDER_PATH = include;
+				PRODUCT_NAME = basicmath;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(SRCROOT)/../../static_libs/BasicMath/include";
+			};
+			name = Release;
+		};
+		FEAFAD2B145E546400207F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FEAFAD2C145E546400207F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FEAFAD2E145E546400207F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicMath/BasicMath-Prefix.pch";
+				INFOPLIST_FILE = "BasicMath/BasicMath-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		FEAFAD2F145E546400207F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicMath/BasicMath-Prefix.pch";
+				INFOPLIST_FILE = "BasicMath/BasicMath-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		FEAFAD43145E557400207F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.0;
+			};
+			name = Debug;
+		};
+		FEAFAD44145E557400207F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F646FD1114F5E28900D2D7FE /* Build configuration list for PBXNativeTarget "BasicMath Static Lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F646FD0F14F5E28900D2D7FE /* Debug */,
+				F646FD1014F5E28900D2D7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEAFAD19145E546400207F22 /* Build configuration list for PBXProject "BasicMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEAFAD2B145E546400207F22 /* Debug */,
+				FEAFAD2C145E546400207F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEAFAD2D145E546400207F22 /* Build configuration list for PBXNativeTarget "BasicMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEAFAD2E145E546400207F22 /* Debug */,
+				FEAFAD2F145E546400207F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEAFAD42145E557400207F22 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEAFAD43145E557400207F22 /* Debug */,
+				FEAFAD44145E557400207F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEAFAD16145E546400207F22 /* Project object */;
+}
