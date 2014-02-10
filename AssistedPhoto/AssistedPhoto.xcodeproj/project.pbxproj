@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F606746F18A8194D00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F606746E18A8194D00E830A3 /* libstdc++.6.0.9.dylib */; };
+		F625E70114E5964900E39BDB /* AudioFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625E70014E5964900E39BDB /* AudioFeedback.framework */; };
+		F625E70514E5966500E39BDB /* DataLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625E70414E5966500E39BDB /* DataLogging.framework */; };
+		F625E70714E5967800E39BDB /* GLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625E70614E5967800E39BDB /* GLVision.framework */; };
+		F625E71814E59A8A00E39BDB /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625E71714E59A8A00E39BDB /* BasicMath.framework */; };
+		F625E71D14E5AE8500E39BDB /* See.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625E70A14E5969700E39BDB /* See.framework */; };
+		F6330D9E14C5DA8C009EAFD0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6330D9D14C5DA8C009EAFD0 /* ImageIO.framework */; };
+		F6330DAC14C78412009EAFD0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6330DAB14C78411009EAFD0 /* MobileCoreServices.framework */; };
+		F646FD3D14FC131600D2D7FE /* GLVision.framework in Resources */ = {isa = PBXBuildFile; fileRef = F625E70614E5967800E39BDB /* GLVision.framework */; };
+		F646FD3F14FC131A00D2D7FE /* AudioFeedback.framework in Resources */ = {isa = PBXBuildFile; fileRef = F625E70014E5964900E39BDB /* AudioFeedback.framework */; };
+		F64EFED81650AE0700C0D1CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64EFED71650AE0700C0D1CC /* Default-568h@2x.png */; };
+		FE4348051432DDC9007BA90C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4348041432DDC9007BA90C /* OpenGLES.framework */; };
+		FE43480D1432E02F007BA90C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE43480C1432E02F007BA90C /* AssetsLibrary.framework */; };
+		FE43480F1432E059007BA90C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE43480E1432E059007BA90C /* CoreMedia.framework */; };
+		FE4348111432E069007BA90C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4348101432E069007BA90C /* CoreVideo.framework */; };
+		FE4348131432E09B007BA90C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4348121432E09B007BA90C /* QuartzCore.framework */; };
+		FE4348151432E1B9007BA90C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4348141432E1B9007BA90C /* AVFoundation.framework */; };
+		FE43481C1432E804007BA90C /* RenderedCameraView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE43481B1432E804007BA90C /* RenderedCameraView.mm */; };
+		FE43489C1437F46F007BA90C /* Camera.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FE43489B1437F46F007BA90C /* Camera.vsh */; };
+		FE43489E1437F47B007BA90C /* Camera.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FE43489D1437F47B007BA90C /* Camera.fsh */; };
+		FE4348A714382846007BA90C /* TimeIntervalTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE4348A614382846007BA90C /* TimeIntervalTracker.cpp */; };
+		FE7D741E14210C2E0039FA52 /* TargetEstimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE7D741D14210C2E0039FA52 /* TargetEstimator.mm */; };
+		FE7D742114210DB90039FA52 /* PinholeCameraTargetEstimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE7D742014210DB90039FA52 /* PinholeCameraTargetEstimator.mm */; };
+		FE80338F142A4CAE004D184A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE80338E142A4CAE004D184A /* AudioToolbox.framework */; };
+		FE803396142B974C004D184A /* AssistedPhotographyTargetEstimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE803395142B974C004D184A /* AssistedPhotographyTargetEstimator.mm */; };
+		FE95D4E0142A4153002FCD37 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE95D4DF142A4153002FCD37 /* OpenAL.framework */; };
+		FED04CB1149C0B53006B4F7F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED04CB0149C0B53006B4F7F /* Accelerate.framework */; };
+		FEDDFB1114277AC80088A6FA /* AMViewController+TargetSelection.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEDDFB1014277AC80088A6FA /* AMViewController+TargetSelection.mm */; };
+		FEDDFB1814279A360088A6FA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FEDDFB1714279A360088A6FA /* Settings.bundle */; };
+		FEDDFB251427D93B0088A6FA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDDFB241427D93A0088A6FA /* CoreMotion.framework */; };
+		FEDDFB3514292C370088A6FA /* TargetMarkerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEDDFB3414292C370088A6FA /* TargetMarkerView.mm */; };
+		FEDDFB38142985700088A6FA /* AMViewController+Settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEDDFB37142985700088A6FA /* AMViewController+Settings.mm */; };
+		FEDF4D8A141FF21000EC1440 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF4D89141FF21000EC1440 /* UIKit.framework */; };
+		FEDF4D8C141FF21000EC1440 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF4D8B141FF21000EC1440 /* Foundation.framework */; };
+		FEDF4D8E141FF21000EC1440 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF4D8D141FF21000EC1440 /* CoreGraphics.framework */; };
+		FEDF4D94141FF21000EC1440 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEDF4D92141FF21000EC1440 /* InfoPlist.strings */; };
+		FEDF4D96141FF21000EC1440 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDF4D95141FF21000EC1440 /* main.m */; };
+		FEDF4D9A141FF21000EC1440 /* AMAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEDF4D99141FF21000EC1440 /* AMAppDelegate.mm */; };
+		FEDF4D9D141FF21000EC1440 /* AMViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEDF4D9C141FF21000EC1440 /* AMViewController.mm */; };
+		FEDF4DA0141FF21000EC1440 /* AMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEDF4D9E141FF21000EC1440 /* AMViewController.xib */; };
+		FEDF4DA7141FF5D000EC1440 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDF4DA6141FF5D000EC1440 /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F606746E18A8194D00E830A3 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		F625E70014E5964900E39BDB /* AudioFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioFeedback.framework; path = ../frameworks/frameworks/AudioFeedback.framework; sourceTree = "<group>"; };
+		F625E70414E5966500E39BDB /* DataLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DataLogging.framework; path = ../frameworks/frameworks/DataLogging.framework; sourceTree = "<group>"; };
+		F625E70614E5967800E39BDB /* GLVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLVision.framework; path = ../frameworks/frameworks/GLVision.framework; sourceTree = "<group>"; };
+		F625E70A14E5969700E39BDB /* See.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = See.framework; path = ../frameworks/frameworks/See.framework; sourceTree = "<group>"; };
+		F625E71714E59A8A00E39BDB /* BasicMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BasicMath.framework; path = ../frameworks/frameworks/BasicMath.framework; sourceTree = "<group>"; };
+		F6330D9D14C5DA8C009EAFD0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		F6330DAB14C78411009EAFD0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F64EFED71650AE0700C0D1CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FE4348041432DDC9007BA90C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FE43480C1432E02F007BA90C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		FE43480E1432E059007BA90C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FE4348101432E069007BA90C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FE4348121432E09B007BA90C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FE4348141432E1B9007BA90C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FE43481A1432E804007BA90C /* RenderedCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderedCameraView.h; sourceTree = "<group>"; };
+		FE43481B1432E804007BA90C /* RenderedCameraView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RenderedCameraView.mm; sourceTree = "<group>"; };
+		FE43489B1437F46F007BA90C /* Camera.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Camera.vsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		FE43489D1437F47B007BA90C /* Camera.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Camera.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		FE4348A614382846007BA90C /* TimeIntervalTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeIntervalTracker.cpp; sourceTree = "<group>"; };
+		FE4348A814382851007BA90C /* TimeIntervalTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIntervalTracker.h; sourceTree = "<group>"; };
+		FE7D741C14210C2E0039FA52 /* TargetEstimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetEstimator.h; sourceTree = "<group>"; };
+		FE7D741D14210C2E0039FA52 /* TargetEstimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TargetEstimator.mm; sourceTree = "<group>"; };
+		FE7D741F14210DB90039FA52 /* PinholeCameraTargetEstimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinholeCameraTargetEstimator.h; sourceTree = "<group>"; };
+		FE7D742014210DB90039FA52 /* PinholeCameraTargetEstimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PinholeCameraTargetEstimator.mm; sourceTree = "<group>"; };
+		FE80338E142A4CAE004D184A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FE803394142B974B004D184A /* AssistedPhotographyTargetEstimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistedPhotographyTargetEstimator.h; sourceTree = "<group>"; };
+		FE803395142B974C004D184A /* AssistedPhotographyTargetEstimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AssistedPhotographyTargetEstimator.mm; sourceTree = "<group>"; };
+		FE95D4DF142A4153002FCD37 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		FED04CB0149C0B53006B4F7F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FEDDFB0F14277AC80088A6FA /* AMViewController+TargetSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMViewController+TargetSelection.h"; sourceTree = "<group>"; };
+		FEDDFB1014277AC80088A6FA /* AMViewController+TargetSelection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AMViewController+TargetSelection.mm"; sourceTree = "<group>"; };
+		FEDDFB1714279A360088A6FA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FEDDFB241427D93A0088A6FA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FEDDFB3314292C370088A6FA /* TargetMarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetMarkerView.h; sourceTree = "<group>"; };
+		FEDDFB3414292C370088A6FA /* TargetMarkerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TargetMarkerView.mm; sourceTree = "<group>"; };
+		FEDDFB361429856F0088A6FA /* AMViewController+Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMViewController+Settings.h"; sourceTree = "<group>"; };
+		FEDDFB37142985700088A6FA /* AMViewController+Settings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AMViewController+Settings.mm"; sourceTree = "<group>"; };
+		FEDF4D85141FF21000EC1440 /* AssistedPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistedPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDF4D89141FF21000EC1440 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEDF4D8B141FF21000EC1440 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEDF4D8D141FF21000EC1440 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEDF4D91141FF21000EC1440 /* AssistedPhoto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AssistedPhoto-Info.plist"; sourceTree = "<group>"; };
+		FEDF4D93141FF21000EC1440 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEDF4D95141FF21000EC1440 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEDF4D97141FF21000EC1440 /* AssistedPhoto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssistedPhoto-Prefix.pch"; sourceTree = "<group>"; };
+		FEDF4D98141FF21000EC1440 /* AMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAppDelegate.h; sourceTree = "<group>"; };
+		FEDF4D99141FF21000EC1440 /* AMAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AMAppDelegate.mm; sourceTree = "<group>"; };
+		FEDF4D9B141FF21000EC1440 /* AMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMViewController.h; sourceTree = "<group>"; };
+		FEDF4D9C141FF21000EC1440 /* AMViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AMViewController.mm; sourceTree = "<group>"; };
+		FEDF4D9F141FF21000EC1440 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AMViewController.xib; sourceTree = "<group>"; };
+		FEDF4DA6141FF5D000EC1440 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEDF4D82141FF21000EC1440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F606746F18A8194D00E830A3 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F625E71814E59A8A00E39BDB /* BasicMath.framework in Frameworks */,
+				F625E71D14E5AE8500E39BDB /* See.framework in Frameworks */,
+				F625E70714E5967800E39BDB /* GLVision.framework in Frameworks */,
+				F625E70514E5966500E39BDB /* DataLogging.framework in Frameworks */,
+				F625E70114E5964900E39BDB /* AudioFeedback.framework in Frameworks */,
+				F6330DAC14C78412009EAFD0 /* MobileCoreServices.framework in Frameworks */,
+				F6330D9E14C5DA8C009EAFD0 /* ImageIO.framework in Frameworks */,
+				FED04CB1149C0B53006B4F7F /* Accelerate.framework in Frameworks */,
+				FE4348151432E1B9007BA90C /* AVFoundation.framework in Frameworks */,
+				FE4348131432E09B007BA90C /* QuartzCore.framework in Frameworks */,
+				FE4348111432E069007BA90C /* CoreVideo.framework in Frameworks */,
+				FE43480F1432E059007BA90C /* CoreMedia.framework in Frameworks */,
+				FE4348051432DDC9007BA90C /* OpenGLES.framework in Frameworks */,
+				FE43480D1432E02F007BA90C /* AssetsLibrary.framework in Frameworks */,
+				FE80338F142A4CAE004D184A /* AudioToolbox.framework in Frameworks */,
+				FE95D4E0142A4153002FCD37 /* OpenAL.framework in Frameworks */,
+				FEDDFB251427D93B0088A6FA /* CoreMotion.framework in Frameworks */,
+				FEDF4D8A141FF21000EC1440 /* UIKit.framework in Frameworks */,
+				FEDF4D8C141FF21000EC1440 /* Foundation.framework in Frameworks */,
+				FEDF4D8E141FF21000EC1440 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE4347FA1432BA77007BA90C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		FE43485B14360411007BA90C /* OpenGLES */ = {
+			isa = PBXGroup;
+			children = (
+				FE43489A1437F455007BA90C /* Shaders */,
+			);
+			name = OpenGLES;
+			sourceTree = "<group>";
+		};
+		FE43489A1437F455007BA90C /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				FE43489B1437F46F007BA90C /* Camera.vsh */,
+				FE43489D1437F47B007BA90C /* Camera.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		FE7D7400141FF8100039FA52 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				FE7D741C14210C2E0039FA52 /* TargetEstimator.h */,
+				FE7D741D14210C2E0039FA52 /* TargetEstimator.mm */,
+				FE7D741F14210DB90039FA52 /* PinholeCameraTargetEstimator.h */,
+				FE7D742014210DB90039FA52 /* PinholeCameraTargetEstimator.mm */,
+				FE803394142B974B004D184A /* AssistedPhotographyTargetEstimator.h */,
+				FE803395142B974C004D184A /* AssistedPhotographyTargetEstimator.mm */,
+			);
+			name = Target;
+			sourceTree = "<group>";
+		};
+		FE7D742214226EDA0039FA52 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FE4348A814382851007BA90C /* TimeIntervalTracker.h */,
+				FE4348A614382846007BA90C /* TimeIntervalTracker.cpp */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		FEDDFB12142781D60088A6FA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FEDDFB1714279A360088A6FA /* Settings.bundle */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		FEDDFB2C14284F240088A6FA /* Target Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEDDFB3314292C370088A6FA /* TargetMarkerView.h */,
+				FEDDFB3414292C370088A6FA /* TargetMarkerView.mm */,
+				FE43481A1432E804007BA90C /* RenderedCameraView.h */,
+				FE43481B1432E804007BA90C /* RenderedCameraView.mm */,
+			);
+			name = "Target Views";
+			sourceTree = "<group>";
+		};
+		FEDF4D7A141FF21000EC1440 = {
+			isa = PBXGroup;
+			children = (
+				F64EFED71650AE0700C0D1CC /* Default-568h@2x.png */,
+				FEDF4DA6141FF5D000EC1440 /* icon.png */,
+				FEDF4D8F141FF21000EC1440 /* AssistedPhoto */,
+				FEDF4D88141FF21000EC1440 /* Frameworks */,
+				FE4347FA1432BA77007BA90C /* Libs */,
+				FEDF4D86141FF21000EC1440 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEDF4D86141FF21000EC1440 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF4D85141FF21000EC1440 /* AssistedPhoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEDF4D88141FF21000EC1440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F606746E18A8194D00E830A3 /* libstdc++.6.0.9.dylib */,
+				F625E71714E59A8A00E39BDB /* BasicMath.framework */,
+				F625E70A14E5969700E39BDB /* See.framework */,
+				F625E70614E5967800E39BDB /* GLVision.framework */,
+				F625E70414E5966500E39BDB /* DataLogging.framework */,
+				F625E70014E5964900E39BDB /* AudioFeedback.framework */,
+				F6330DAB14C78411009EAFD0 /* MobileCoreServices.framework */,
+				F6330D9D14C5DA8C009EAFD0 /* ImageIO.framework */,
+				FED04CB0149C0B53006B4F7F /* Accelerate.framework */,
+				FE4348141432E1B9007BA90C /* AVFoundation.framework */,
+				FE4348121432E09B007BA90C /* QuartzCore.framework */,
+				FE4348101432E069007BA90C /* CoreVideo.framework */,
+				FE43480E1432E059007BA90C /* CoreMedia.framework */,
+				FE43480C1432E02F007BA90C /* AssetsLibrary.framework */,
+				FE4348041432DDC9007BA90C /* OpenGLES.framework */,
+				FE80338E142A4CAE004D184A /* AudioToolbox.framework */,
+				FE95D4DF142A4153002FCD37 /* OpenAL.framework */,
+				FEDDFB241427D93A0088A6FA /* CoreMotion.framework */,
+				FEDF4D89141FF21000EC1440 /* UIKit.framework */,
+				FEDF4D8B141FF21000EC1440 /* Foundation.framework */,
+				FEDF4D8D141FF21000EC1440 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEDF4D8F141FF21000EC1440 /* AssistedPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				FEDDFB12142781D60088A6FA /* Settings */,
+				FE7D742214226EDA0039FA52 /* Util */,
+				FE7D7400141FF8100039FA52 /* Target */,
+				FEDDFB2C14284F240088A6FA /* Target Views */,
+				FE43485B14360411007BA90C /* OpenGLES */,
+				FEDF4D98141FF21000EC1440 /* AMAppDelegate.h */,
+				FEDF4D99141FF21000EC1440 /* AMAppDelegate.mm */,
+				FEDF4D9B141FF21000EC1440 /* AMViewController.h */,
+				FEDF4D9C141FF21000EC1440 /* AMViewController.mm */,
+				FEDDFB361429856F0088A6FA /* AMViewController+Settings.h */,
+				FEDDFB37142985700088A6FA /* AMViewController+Settings.mm */,
+				FEDDFB0F14277AC80088A6FA /* AMViewController+TargetSelection.h */,
+				FEDDFB1014277AC80088A6FA /* AMViewController+TargetSelection.mm */,
+				FEDF4D9E141FF21000EC1440 /* AMViewController.xib */,
+				FEDF4D90141FF21000EC1440 /* Supporting Files */,
+			);
+			path = AssistedPhoto;
+			sourceTree = "<group>";
+		};
+		FEDF4D90141FF21000EC1440 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF4D91141FF21000EC1440 /* AssistedPhoto-Info.plist */,
+				FEDF4D92141FF21000EC1440 /* InfoPlist.strings */,
+				FEDF4D95141FF21000EC1440 /* main.m */,
+				FEDF4D97141FF21000EC1440 /* AssistedPhoto-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEDF4D84141FF21000EC1440 /* AssistedPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDF4DA3141FF21000EC1440 /* Build configuration list for PBXNativeTarget "AssistedPhoto" */;
+			buildPhases = (
+				FEDF4D81141FF21000EC1440 /* Sources */,
+				FEDF4D82141FF21000EC1440 /* Frameworks */,
+				FEDF4D83141FF21000EC1440 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssistedPhoto;
+			productName = AudiballMix;
+			productReference = FEDF4D85141FF21000EC1440 /* AssistedPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEDF4D7C141FF21000EC1440 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Robotics Institute. Carnegie Mellon University";
+			};
+			buildConfigurationList = FEDF4D7F141FF21000EC1440 /* Build configuration list for PBXProject "AssistedPhoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEDF4D7A141FF21000EC1440;
+			productRefGroup = FEDF4D86141FF21000EC1440 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEDF4D84141FF21000EC1440 /* AssistedPhoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEDF4D83141FF21000EC1440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE43489C1437F46F007BA90C /* Camera.vsh in Resources */,
+				FE43489E1437F47B007BA90C /* Camera.fsh in Resources */,
+				FEDF4D94141FF21000EC1440 /* InfoPlist.strings in Resources */,
+				FEDF4DA0141FF21000EC1440 /* AMViewController.xib in Resources */,
+				FEDF4DA7141FF5D000EC1440 /* icon.png in Resources */,
+				FEDDFB1814279A360088A6FA /* Settings.bundle in Resources */,
+				F646FD3D14FC131600D2D7FE /* GLVision.framework in Resources */,
+				F646FD3F14FC131A00D2D7FE /* AudioFeedback.framework in Resources */,
+				F64EFED81650AE0700C0D1CC /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEDF4D81141FF21000EC1440 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDF4D96141FF21000EC1440 /* main.m in Sources */,
+				FEDF4D9A141FF21000EC1440 /* AMAppDelegate.mm in Sources */,
+				FEDF4D9D141FF21000EC1440 /* AMViewController.mm in Sources */,
+				FE7D741E14210C2E0039FA52 /* TargetEstimator.mm in Sources */,
+				FE7D742114210DB90039FA52 /* PinholeCameraTargetEstimator.mm in Sources */,
+				FEDDFB1114277AC80088A6FA /* AMViewController+TargetSelection.mm in Sources */,
+				FEDDFB3514292C370088A6FA /* TargetMarkerView.mm in Sources */,
+				FEDDFB38142985700088A6FA /* AMViewController+Settings.mm in Sources */,
+				FE803396142B974C004D184A /* AssistedPhotographyTargetEstimator.mm in Sources */,
+				FE43481C1432E804007BA90C /* RenderedCameraView.mm in Sources */,
+				FE4348A714382846007BA90C /* TimeIntervalTracker.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEDF4D92141FF21000EC1440 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEDF4D93141FF21000EC1440 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEDF4D9E141FF21000EC1440 /* AMViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEDF4D9F141FF21000EC1440 /* en */,
+			);
+			name = AMViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEDF4DA1141FF21000EC1440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEDF4DA2141FF21000EC1440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEDF4DA4141FF21000EC1440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../frameworks/frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AssistedPhoto/AssistedPhoto-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "AssistedPhoto/AssistedPhoto-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = AssistedPhoto;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEDF4DA5141FF21000EC1440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../frameworks/frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AssistedPhoto/AssistedPhoto-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "AssistedPhoto/AssistedPhoto-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = AssistedPhoto;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEDF4D7F141FF21000EC1440 /* Build configuration list for PBXProject "AssistedPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDF4DA1141FF21000EC1440 /* Debug */,
+				FEDF4DA2141FF21000EC1440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEDF4DA3141FF21000EC1440 /* Build configuration list for PBXNativeTarget "AssistedPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDF4DA4141FF21000EC1440 /* Debug */,
+				FEDF4DA5141FF21000EC1440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEDF4D7C141FF21000EC1440 /* Project object */;
+}
