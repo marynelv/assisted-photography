@@ -88,7 +88,7 @@ static float radians(float x, float y, float goalx, float goaly)
     [self.ballView setHidden:YES];
     [self.view addSubview:self.ballView];
     
-    self.audioType = AUDIO_SUSUMU4;
+    self.audioType = AUDIO_PIANO;
     [self startAudioFeedback];
 }
 
@@ -133,11 +133,11 @@ static float radians(float x, float y, float goalx, float goaly)
     }
     
     switch (self.audioType) {
-        case AUDIO_SUSUMU4:
-            self.audioFeedback = [[RadialAudioFeedback alloc] init];
-            self.radialRegionView.numDirections = 4;
-            self.typeLabel.text = @"Radial (Susumu)";
-            break;
+//        case AUDIO_SUSUMU4: -- excluded due to copyright
+//            self.audioFeedback = [[RadialAudioFeedback alloc] init];
+//            self.radialRegionView.numDirections = 4;
+//            self.typeLabel.text = @"Radial (Susumu)";
+//            break;
         case AUDIO_SPEECH4:
             self.audioFeedback = [[RadialAudioFeedback alloc] initWithSpeechSounds];
             self.radialRegionView.numDirections = 4;
@@ -174,11 +174,11 @@ static float radians(float x, float y, float goalx, float goaly)
         float dist; float rad;
         
         switch (self.audioType) {
-            case AUDIO_SUSUMU4:
-                dist = distanceTo(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
-                rad = radians(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
-                [self.audioFeedback startWithDistance:&dist andOrientation:&rad];
-                break;
+//            case AUDIO_SUSUMU4: -- excluded due to copyright
+//                dist = distanceTo(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
+//                rad = radians(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
+//                [self.audioFeedback startWithDistance:&dist andOrientation:&rad];
+//                break;
             case AUDIO_SPEECH4:
                 dist = distanceTo(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
                 rad = radians(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
@@ -215,11 +215,11 @@ static float radians(float x, float y, float goalx, float goaly)
         
         float dist; float rad;
         switch (self.audioType) {
-            case AUDIO_SUSUMU4:
-                dist = distanceTo(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
-                rad = radians(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
-                [self.audioFeedback updateFeedbackWithDistance:&dist andOrientation:&rad];
-                break;
+//            case AUDIO_SUSUMU4: -- excluded due to copyright
+//                dist = distanceTo(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
+//                rad = radians(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
+//                [self.audioFeedback updateFeedbackWithDistance:&dist andOrientation:&rad];
+//                break;
             case AUDIO_SPEECH4:
                 dist = distanceTo(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
                 rad = radians(p.x, p.y, CIRCLE_CENTER_X, CIRCLE_CENTER_Y);
@@ -260,9 +260,9 @@ static float radians(float x, float y, float goalx, float goaly)
     {
         
         switch (self.audioType) {
-            case AUDIO_SUSUMU4:
-                self.audioType = AUDIO_SPEECH4;
-                break;
+//            case AUDIO_SUSUMU4: -- excluded due to copyright
+//                self.audioType = AUDIO_SPEECH4;
+//                break;
             case AUDIO_SPEECH4:
                 self.audioType = AUDIO_PIANO;
                 break;
@@ -270,7 +270,7 @@ static float radians(float x, float y, float goalx, float goaly)
                 self.audioType = AUDIO_PIANOBEEP;
                 break;
             case AUDIO_PIANOBEEP:
-                self.audioType = AUDIO_SUSUMU4;
+                self.audioType = AUDIO_SPEECH4;
                 break;
             default:
                 break;

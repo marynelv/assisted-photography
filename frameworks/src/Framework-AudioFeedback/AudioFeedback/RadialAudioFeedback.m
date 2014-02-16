@@ -90,13 +90,13 @@
 @synthesize smoothTransition;
 
 /**
-    Initialize with default sound files (Susumu's 4 principal radial directions)
+    Initialize with default sound files (Piano)
     @return id of initialized instance
     @note <a>changePitch</a> is set to <a>TRUE</a> by default (use setter to modify)
  */
 -(id) init
 {
-    return [self initWithSusumu4Sounds];
+    return [self initWithPianoSound];
 }
 
 
@@ -113,7 +113,7 @@
     {
         if (!soundFiles)
         {
-            AudioFeedbackDebugLog(@"Invalid sound files. Falling back to default sounds (reordered Susumu's 4 principal radial directions).");
+            AudioFeedbackDebugLog(@"Invalid sound files. Falling back to default sounds (Piano).");
             return [self init];
         }
         else
@@ -140,33 +140,33 @@
     return self;
 }
 
-/**
-    Initializes audio feedback with a reordered sequence of 4 sounds from the "Radial Direction" model
-    @return id of initialized instance
-    Enables smooth audio transitions and sets the first direction angle to 0 (right) by default.
-    @note See Harada, Takagi, Asakawa, "On the audio representation of radial direction", CHI'11
- */
--(id) initWithSusumu4Sounds
-{
-    if (self = [super init])
-    {
-        NSArray *files = [[NSArray alloc] initWithObjects:
-                          @"AudioFeedback.framework/Resources/susumu_i_S",          // DIR_RIGHT
-                          @"AudioFeedback.framework/Resources/susumu_aw_S",         // DIR_DOWN
-                          @"AudioFeedback.framework/Resources/susumu_ibar_S",       // DIR_LEFT
-                          @"AudioFeedback.framework/Resources/susumu_u_S",          // DIR_UP
-                          nil];
-        [self setUpMultipleOpenALSounds:files looping:YES];
-        self.numberOfDirections = [files count];
-        self.spacingBetweenDirections = SPACING(self.numberOfDirections);
-        self.smoothTransition = YES;
-        self.firstDirectionAngle = 0.f;
-        // set OpenAL distance model
-        alDistanceModel(AL_LINEAR_DISTANCE);
-        
-    }
-    return self;
-}
+///** -- excluded due to copyright
+//    Initializes audio feedback with a reordered sequence of 4 sounds from the "Radial Direction" model
+//    @return id of initialized instance
+//    Enables smooth audio transitions and sets the first direction angle to 0 (right) by default.
+//    @note See Harada, Takagi, Asakawa, "On the audio representation of radial direction", CHI'11
+// */
+//-(id) initWithSusumu4Sounds
+//{
+//    if (self = [super init])
+//    {
+//        NSArray *files = [[NSArray alloc] initWithObjects:
+//                          @"AudioFeedback.framework/Resources/susumu_i_S",          // DIR_RIGHT
+//                          @"AudioFeedback.framework/Resources/susumu_aw_S",         // DIR_DOWN
+//                          @"AudioFeedback.framework/Resources/susumu_ibar_S",       // DIR_LEFT
+//                          @"AudioFeedback.framework/Resources/susumu_u_S",          // DIR_UP
+//                          nil];
+//        [self setUpMultipleOpenALSounds:files looping:YES];
+//        self.numberOfDirections = [files count];
+//        self.spacingBetweenDirections = SPACING(self.numberOfDirections);
+//        self.smoothTransition = YES;
+//        self.firstDirectionAngle = 0.f;
+//        // set OpenAL distance model
+//        alDistanceModel(AL_LINEAR_DISTANCE);
+//        
+//    }
+//    return self;
+//}
 
 /**
     Initialize with default speech files ("up","down","left","right")

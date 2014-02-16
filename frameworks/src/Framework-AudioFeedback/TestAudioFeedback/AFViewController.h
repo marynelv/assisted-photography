@@ -40,7 +40,7 @@
 typedef enum AudioFeedbackType {
     AUDIO_PIANO,            //!< linear (garage_electricPiano)
     AUDIO_PIANOBEEP,        //!< linear (garage_electricPianoSilence)
-    AUDIO_SUSUMU4,          //!< radial/susumu (4 directions only)
+    //AUDIO_SUSUMU4,          //!< radial/susumu (4 directions only) -- excluded due to copyright
     AUDIO_SPEECH4,          //!< radial/spoken (4 direction only)
     AUDIO_NUMTYPES          //!< number of audio feedback types
 } AudioType;

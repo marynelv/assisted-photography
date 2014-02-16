@@ -50,7 +50,7 @@
 -(id) init;
 -(id) initWithSoundFiles:(NSArray*)soundFiles andStartingAtAngle:(float)radians;
 // easy sound initializers
--(id) initWithSusumu4Sounds;
+//-(id) initWithSusumu4Sounds; -- excluded due to copyright
 -(id) initWithSpeechSounds;
 -(id) initWithPianoSound;
 -(id) initWithPianoBeepSound;
