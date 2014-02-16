@@ -17,7 +17,7 @@ In general, the application behaves as follows:
 
 NOTE: If the phone was held vertically, but slightly tilted, the application will automatically correct the extra rotation. 
 
-Full rational of how the app works can be found in:
+Full rationale of how the app works can be found in:
 
 Marynel Vazquez, Aaron Steinfeld. "Helping visually impaired users properly aim a camera". Proceedings of the 14th international ACM SIGACCESS Conference on Computers and Accessibility, 2012
 
@@ -46,4 +46,9 @@ Piano: The pitch of a looping tone indicates distance from the suggested center 
 Piano Beep: Same as above, but the tone is not continuous.
 
 Silent feedback: The system lets the user capture the scene continuously, without providing any audible guidance.
- 
+
+
+Logging
+======= 
+
+By default, the application logs a lot of data (images, intertial measurements, etc). Most of this can be disabled by commenting the definition of LOG_EXPERIMENT_DATA in AssistedPhoto/AssistedPhotographyTargetEstimator.h
