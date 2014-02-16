@@ -3,7 +3,7 @@ This folder contains the Xcode project and source code of our assisted photograp
 How does the app work?
 =====================
 
-The application is meant to be used while holding the phone verically. It can operate in two modes: simulated pinhole camera, or assisted photography. The former relies on the intertial sensors inside the phone, and is meant for testing camera aiming. The latter processes images from the back camera in the phone, and tries to guide the user towards centering the estimated region of interest in the composition. You can change in which mode the application operates by going to Settings->AssistedPhoto->Estimator.
+The application is meant to be used while holding the phone vertically. It can operate in two modes: simulated pinhole camera, or assisted photography. The former relies on the inertial sensors inside the phone, and is meant for testing camera aiming. The latter processes images from the back camera in the phone, and tries to guide the user towards centering the estimated region of interest in the composition. You can change in which mode the application operates by going to Settings->AssistedPhoto->Estimator.
 
 In general, the application behaves as follows:
 
@@ -32,13 +32,18 @@ Settings
 The settings of the application include:
 
 Estimator: application mode (as explained above)
-Acceptance Distance: Minimimum distance at which the suggested center has to be from the middle of the composition for the app to say that the user has centered the target
+Acceptance Distance: Minimum distance at which the suggested center has to be from the middle of the composition for the app to say that the user has centered the target
 Sound Type: Audio feedback (silent, piano, piano beep, speech)
 
 
 Audio feedback
 ==============
 
+Speech: Spoken words provide information about the relative orientation of the suggested center with respect to the middle, as well as the distance between the two. The system repeatedly speaks "up", "down", "left" or "right" to indicate orientation, depending on whether the suggested center is located in the upper part of the image, the lower part, etc. Words are spoken with different pitch as a cue on how close the suggested center is to the middle. Higher pitch means closer.
 
+Piano: The pitch of a looping tone indicates distance from the suggested center to the middle of the image. Higher pitch means closer as before. No orientation information is provided.
 
+Piano Beep: Same as above, but the tone is not continuous.
+
+Silent feedback: The system lets the user capture the scene continuously, without providing any audible guidance.
  

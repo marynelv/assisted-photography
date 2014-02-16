@@ -12,7 +12,7 @@ The assisted photography application is in the AssistedPhoto folder. This app re
 [Quick compilation instructions]
 
 1. Go into the frameworks folder, and run the compile script from the command line: ./compile.sh
-2. Go into the AssistedPhoto folder, and open the Xcode project
+2. Go into the AssistedPhoto folder, and open the XCode project
 3. Change the Bundle identifier if need to
 4. Build the AssistedPhoto target
 
