@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		FECE102B14699A9100B7C394 /* Framework Aggregate */ = {
+		FECE102B14699A9100B7C394 /* Build GLVision */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = FECE102C14699A9100B7C394 /* Build configuration list for PBXAggregateTarget "Framework Aggregate" */;
+			buildConfigurationList = FECE102C14699A9100B7C394 /* Build configuration list for PBXAggregateTarget "Build GLVision" */;
 			buildPhases = (
 				FECE102F14699A9A00B7C394 /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = "Framework Aggregate";
+			name = "Build GLVision";
 			productName = "Framework Aggregate";
 		};
 /* End PBXAggregateTarget section */
@@ -29,6 +29,8 @@
 		F6437F23150031B000EE1589 /* GLVViewResizeGray.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6437F21150031B000EE1589 /* GLVViewResizeGray.mm */; };
 		F64EFEEB1651415A00C0D1CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64EFEEA1651415A00C0D1CC /* Default-568h@2x.png */; };
 		F64EFF151651CB5E00C0D1CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64EFEEA1651415A00C0D1CC /* Default-568h@2x.png */; };
+		F67FF93D18B1492900DA3A28 /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD46145E560F00207F22 /* BasicMath.framework */; };
+		F67FF93E18B149B800DA3A28 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F606744518A80E4F00E830A3 /* libstdc++.6.0.9.dylib */; };
 		FE00A8B3146842C700B058DA /* GLVProgramSaliencyFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = FE00A8B1146842C700B058DA /* GLVProgramSaliencyFeatures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE00A8B4146842C700B058DA /* GLVProgramSaliencyFeatures.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8B2146842C700B058DA /* GLVProgramSaliencyFeatures.mm */; };
 		FE00A8B71468438200B058DA /* saliencyFeatures.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FE00A8B61468438200B058DA /* saliencyFeatures.fsh */; };
@@ -83,7 +85,6 @@
 		FE7B85A6146B14E000F0E097 /* GLVViewSaliency.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8B914684B4B00B058DA /* GLVViewSaliency.mm */; };
 		FEAFACB2145DB35A00207F22 /* texture.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FEAFACB1145DB2B200207F22 /* texture.vsh */; };
 		FEAFACBC145E4CB300207F22 /* ImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAFACBB145E4CB300207F22 /* ImageSource.m */; };
-		FEAFAD47145E560F00207F22 /* BasicMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD46145E560F00207F22 /* BasicMath.framework */; };
 		FEAFAD49145E589700207F22 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD48145E589700207F22 /* AVFoundation.framework */; };
 		FEAFAD4B145E58AC00207F22 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD4A145E58AC00207F22 /* CoreVideo.framework */; };
 		FEAFAD4F145E58EE00207F22 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAFAD4E145E58EE00207F22 /* CoreMedia.framework */; };
@@ -229,11 +230,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67FF93E18B149B800DA3A28 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F67FF93D18B1492900DA3A28 /* BasicMath.framework in Frameworks */,
 				FEAFAD55145EF98D00207F22 /* GLVision.framework in Frameworks */,
 				FEAFAD4F145E58EE00207F22 /* CoreMedia.framework in Frameworks */,
 				FEAFAD4B145E58AC00207F22 /* CoreVideo.framework in Frameworks */,
 				FEAFAD49145E589700207F22 /* AVFoundation.framework in Frameworks */,
-				FEAFAD47145E560F00207F22 /* BasicMath.framework in Frameworks */,
 				FE1C54591456E2F6004FED72 /* CoreFoundation.framework in Frameworks */,
 				FE1C545A1456E2F6004FED72 /* QuartzCore.framework in Frameworks */,
 				FE1C545B1456E2F6004FED72 /* OpenGLES.framework in Frameworks */,
@@ -521,7 +523,7 @@
 			projectRoot = "";
 			targets = (
 				FE1C5400145393C7004FED72 /* GLVision */,
-				FECE102B14699A9100B7C394 /* Framework Aggregate */,
+				FECE102B14699A9100B7C394 /* Build GLVision */,
 				FE1C537E14538845004FED72 /* GLVTest */,
 				FE00A8BF1468CB8500B058DA /* GLVFeatures */,
 			);
@@ -629,12 +631,12 @@
 /* Begin PBXTargetDependency section */
 		FECE103114699AA300B7C394 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FECE102B14699A9100B7C394 /* Framework Aggregate */;
+			target = FECE102B14699A9100B7C394 /* Build GLVision */;
 			targetProxy = FECE103014699AA300B7C394 /* PBXContainerItemProxy */;
 		};
 		FECE103314699AA700B7C394 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FECE102B14699A9100B7C394 /* Framework Aggregate */;
+			target = FECE102B14699A9100B7C394 /* Build GLVision */;
 			targetProxy = FECE103214699AA700B7C394 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -778,12 +780,13 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../frameworks\"",
+					"$(SRCROOT)/../../frameworks",
+					"/Users/marynelv/Documents/Repos/assisted-photography/frameworks/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BasicTestApp/Framework-GLVision-Prefix.pch";
 				INFOPLIST_FILE = "BasicTestApp/Framework-GLVision-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = GLVTest;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
@@ -796,12 +799,13 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../frameworks\"",
+					"$(SRCROOT)/../../frameworks",
+					"/Users/marynelv/Documents/Repos/assisted-photography/frameworks/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BasicTestApp/Framework-GLVision-Prefix.pch";
 				INFOPLIST_FILE = "BasicTestApp/Framework-GLVision-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = GLVTest;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
@@ -924,7 +928,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FECE102C14699A9100B7C394 /* Build configuration list for PBXAggregateTarget "Framework Aggregate" */ = {
+		FECE102C14699A9100B7C394 /* Build configuration list for PBXAggregateTarget "Build GLVision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FECE102D14699A9100B7C394 /* Debug */,

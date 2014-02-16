@@ -50,15 +50,6 @@
 		F6B2AEA014BF7D7400B087F6 /* speech_left.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9214BF7D7400B087F6 /* speech_left.caf */; };
 		F6B2AEA114BF7D7400B087F6 /* speech_right.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9314BF7D7400B087F6 /* speech_right.caf */; };
 		F6B2AEA214BF7D7400B087F6 /* speech_up.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9414BF7D7400B087F6 /* speech_up.caf */; };
-		F6B2AEA314BF7D7400B087F6 /* susumu_a_S.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9514BF7D7400B087F6 /* susumu_a_S.caf */; };
-		F6B2AEA414BF7D7400B087F6 /* susumu_ae_S.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9614BF7D7400B087F6 /* susumu_ae_S.caf */; };
-		F6B2AEA514BF7D7400B087F6 /* susumu_aw_S.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9714BF7D7400B087F6 /* susumu_aw_S.caf */; };
-		F6B2AEA614BF7D7400B087F6 /* susumu_e_S.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9814BF7D7400B087F6 /* susumu_e_S.caf */; };
-		F6B2AEA714BF7D7400B087F6 /* susumu_i_S.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9914BF7D7400B087F6 /* susumu_i_S.caf */; };
-		F6B2AEA814BF7D7400B087F6 /* susumu_ibar_S.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9A14BF7D7400B087F6 /* susumu_ibar_S.caf */; };
-		F6B2AEA914BF7D7400B087F6 /* susumu_o_S_trimmed.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9B14BF7D7400B087F6 /* susumu_o_S_trimmed.caf */; };
-		F6B2AEAA14BF7D7400B087F6 /* susumu_o_S.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9C14BF7D7400B087F6 /* susumu_o_S.caf */; };
-		F6B2AEAB14BF7D7400B087F6 /* susumu_u_S.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AE9D14BF7D7400B087F6 /* susumu_u_S.caf */; };
 		F6B2AEAF14C09C8E00B087F6 /* garage_electricPiano.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AEAE14C09C8E00B087F6 /* garage_electricPiano.caf */; };
 		F6B2AEB114C09D4800B087F6 /* garage_electricPianoBeep.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6B2AEB014C09D4800B087F6 /* garage_electricPianoBeep.caf */; };
 		F6D7B64615256377001CB2D4 /* garage_tum.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6D7B64515256377001CB2D4 /* garage_tum.caf */; };
@@ -353,15 +344,6 @@
 				F6B2AEA014BF7D7400B087F6 /* speech_left.caf in Resources */,
 				F6B2AEA114BF7D7400B087F6 /* speech_right.caf in Resources */,
 				F6B2AEA214BF7D7400B087F6 /* speech_up.caf in Resources */,
-				F6B2AEA314BF7D7400B087F6 /* susumu_a_S.caf in Resources */,
-				F6B2AEA414BF7D7400B087F6 /* susumu_ae_S.caf in Resources */,
-				F6B2AEA514BF7D7400B087F6 /* susumu_aw_S.caf in Resources */,
-				F6B2AEA614BF7D7400B087F6 /* susumu_e_S.caf in Resources */,
-				F6B2AEA714BF7D7400B087F6 /* susumu_i_S.caf in Resources */,
-				F6B2AEA814BF7D7400B087F6 /* susumu_ibar_S.caf in Resources */,
-				F6B2AEA914BF7D7400B087F6 /* susumu_o_S_trimmed.caf in Resources */,
-				F6B2AEAA14BF7D7400B087F6 /* susumu_o_S.caf in Resources */,
-				F6B2AEAB14BF7D7400B087F6 /* susumu_u_S.caf in Resources */,
 				F6B2AEAF14C09C8E00B087F6 /* garage_electricPiano.caf in Resources */,
 				F6B2AEB114C09D4800B087F6 /* garage_electricPianoBeep.caf in Resources */,
 				F65B4D1414CDADEF00C5A7D6 /* garage_turup.caf in Resources */,
@@ -394,7 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=AudioFeedback\nFMK_VERSION=A\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/../../frameworks/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=AudioFeedback\nFMK_VERSION=A\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/../../frameworks/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=${SRCROOT}/build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

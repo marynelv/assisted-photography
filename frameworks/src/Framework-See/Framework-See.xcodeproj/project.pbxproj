@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		FEAFADBF14604ED000207F22 /* Build Aggregate */ = {
+		FEAFADBF14604ED000207F22 /* Build See */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = FEAFADC014604ED000207F22 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */;
+			buildConfigurationList = FEAFADC014604ED000207F22 /* Build configuration list for PBXAggregateTarget "Build See" */;
 			buildPhases = (
 				FEAFADC314604ED400207F22 /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = "Build Aggregate";
+			name = "Build See";
 			productName = "Build Aggregate";
 		};
 /* End PBXAggregateTarget section */
@@ -993,7 +993,7 @@
 			projectRoot = "";
 			targets = (
 				FEAFADA214604DD300207F22 /* See */,
-				FEAFADBF14604ED000207F22 /* Build Aggregate */,
+				FEAFADBF14604ED000207F22 /* Build See */,
 				FEAFADC914605EEC00207F22 /* SeeTestCamera */,
 				FEFFB52A1472E949000E42BC /* SeeTestPyramid */,
 				FEFEE6471460B3E600B3CCF6 /* SeeTestSaliency */,
@@ -1191,27 +1191,27 @@
 /* Begin PBXTargetDependency section */
 		F6437F2D150167DC00EE1589 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			target = FEAFADBF14604ED000207F22 /* Build See */;
 			targetProxy = F6437F2C150167DC00EE1589 /* PBXContainerItemProxy */;
 		};
 		FE192248148E5BF7009714E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			target = FEAFADBF14604ED000207F22 /* Build See */;
 			targetProxy = FE192247148E5BF7009714E4 /* PBXContainerItemProxy */;
 		};
 		FEAFADE814605F1600207F22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			target = FEAFADBF14604ED000207F22 /* Build See */;
 			targetProxy = FEAFADE714605F1600207F22 /* PBXContainerItemProxy */;
 		};
 		FEFEE6B61460D58300B3CCF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			target = FEAFADBF14604ED000207F22 /* Build See */;
 			targetProxy = FEFEE6B51460D58300B3CCF6 /* PBXContainerItemProxy */;
 		};
 		FEFFB55314730CDE000E42BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FEAFADBF14604ED000207F22 /* Build Aggregate */;
+			target = FEAFADBF14604ED000207F22 /* Build See */;
 			targetProxy = FEFFB55214730CDE000E42BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1672,7 +1672,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1681,7 +1681,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -1951,7 +1951,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FEAFADC014604ED000207F22 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */ = {
+		FEAFADC014604ED000207F22 /* Build configuration list for PBXAggregateTarget "Build See" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FEAFADC114604ED000207F22 /* Debug */,

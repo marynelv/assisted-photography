@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		FE093DFB1466C181008630E9 /* Build Aggregate */ = {
+		FE093DFB1466C181008630E9 /* Build DataLogging */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = FE093DFC1466C181008630E9 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */;
+			buildConfigurationList = FE093DFC1466C181008630E9 /* Build configuration list for PBXAggregateTarget "Build DataLogging" */;
 			buildPhases = (
 				FE093DFF1466C189008630E9 /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = "Build Aggregate";
+			name = "Build DataLogging";
 			productName = "Build Aggregate";
 		};
 /* End PBXAggregateTarget section */
@@ -228,7 +228,7 @@
 			projectRoot = "";
 			targets = (
 				FE093DEB1466C12B008630E9 /* DataLogging */,
-				FE093DFB1466C181008630E9 /* Build Aggregate */,
+				FE093DFB1466C181008630E9 /* Build DataLogging */,
 				F646FD2614F5E6E500D2D7FE /* DataLogging Static Lib */,
 			);
 		};
@@ -486,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE093DFC1466C181008630E9 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */ = {
+		FE093DFC1466C181008630E9 /* Build configuration list for PBXAggregateTarget "Build DataLogging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE093DFD1466C181008630E9 /* Debug */,

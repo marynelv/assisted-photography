@@ -289,9 +289,9 @@
         case AUDIOFEEDBACK_PIANOBEEP:
             self.audioFeedback = [[RadialAudioFeedback alloc] initWithPianoBeepSound];
             break;
-        case AUDIOFEEDBACK_SUSUMU4:
-            self.audioFeedback = [[RadialAudioFeedback alloc] initWithSusumu4Sounds];
-            break;
+//        case AUDIOFEEDBACK_SUSUMU4: -- removed due to copyright
+//            self.audioFeedback = [[RadialAudioFeedback alloc] initWithSusumu4Sounds];
+//            break;
         case AUDIOFEEDBACK_SPEECH4:
             self.audioFeedback = [[RadialAudioFeedback alloc] initWithSpeechSounds];
             break;
@@ -386,9 +386,9 @@
         case AUDIOFEEDBACK_PIANOBEEP:
             audioTypeStr = @"PIANOBEEP";
             break;
-        case AUDIOFEEDBACK_SUSUMU4:
-            audioTypeStr = @"SUSUMU4";
-            break;
+//        case AUDIOFEEDBACK_SUSUMU4: -- removed due to copyright
+//            audioTypeStr = @"SUSUMU4";
+//            break;
         case AUDIOFEEDBACK_SPEECH4:
             audioTypeStr = @"SPEECH4";
             break;

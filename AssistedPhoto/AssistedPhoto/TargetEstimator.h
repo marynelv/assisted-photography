@@ -48,7 +48,7 @@ typedef enum AudioFeedbackType {
     AUDIOFEEDBACK_SILENT,           //!< no audio feedback
     AUDIOFEEDBACK_PIANO,            //!< piano tone
     AUDIOFEEDBACK_PIANOBEEP,        //!< piano beep
-    AUDIOFEEDBACK_SUSUMU4,          //!< reordered selection of radial directions
+//    AUDIOFEEDBACK_SUSUMU4,          //!< reordered selection of radial directions
     AUDIOFEEDBACK_SPEECH4,          //!< spoken "right","bottom","left","top" directions
     AUDIOFEEDBACK_NUM               //!< number of available audio feedback types
 } AudioType;

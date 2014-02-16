@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		FEAFAD41145E557400207F22 /* Build Aggregate */ = {
+		FEAFAD41145E557400207F22 /* Build BasicMath */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = FEAFAD42145E557400207F22 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */;
+			buildConfigurationList = FEAFAD42145E557400207F22 /* Build configuration list for PBXAggregateTarget "Build BasicMath" */;
 			buildPhases = (
 				FEAFAD45145E557900207F22 /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = "Build Aggregate";
+			name = "Build BasicMath";
 			productName = "Build Aggregate";
 		};
 /* End PBXAggregateTarget section */
@@ -231,7 +231,7 @@
 			projectRoot = "";
 			targets = (
 				FEAFAD1E145E546400207F22 /* BasicMath */,
-				FEAFAD41145E557400207F22 /* Build Aggregate */,
+				FEAFAD41145E557400207F22 /* Build BasicMath */,
 				F646FD0D14F5E28900D2D7FE /* BasicMath Static Lib */,
 			);
 		};
@@ -392,6 +392,7 @@
 		FEAFAD2E145E546400207F22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DEAD_CODE_STRIPPING = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -410,6 +411,7 @@
 		FEAFAD2F145E546400207F22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DEAD_CODE_STRIPPING = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -475,7 +477,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FEAFAD42145E557400207F22 /* Build configuration list for PBXAggregateTarget "Build Aggregate" */ = {
+		FEAFAD42145E557400207F22 /* Build configuration list for PBXAggregateTarget "Build BasicMath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FEAFAD43145E557400207F22 /* Debug */,

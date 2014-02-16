@@ -65,7 +65,7 @@
         
         // sound type
         int soundType = [AMViewController loadMultivalueSetting:@"sound_type_preference" 
-                                                   orSetDefault:4
+                                                   orSetDefault:3
                                                   usingDefaults:defaults];
         [self.targetEstimator setUpAudioFeedback:(AudioType)soundType];
         [self.targetEstimator start];
