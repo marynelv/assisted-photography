@@ -18,7 +18,7 @@
 			<key>Key</key>
 			<string>target_estimator_preference</string>
 			<key>DefaultValue</key>
-			<string>0</string>
+			<string>1</string>
 			<key>Titles</key>
 			<array>
 				<string>Pinhole Camera (IMU)</string>

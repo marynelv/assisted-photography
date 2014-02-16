@@ -53,7 +53,7 @@
         // target estimator type
         int targetEstimatorType = [AMViewController 
                                              loadMultivalueSetting:@"target_estimator_preference" 
-                                                                         orSetDefault:0
+                                                                         orSetDefault:1
                                                                       usingDefaults:defaults];
         [self setUpNewTargetEstimator:(TargetEstimatorType)targetEstimatorType];
         
@@ -65,7 +65,7 @@
         
         // sound type
         int soundType = [AMViewController loadMultivalueSetting:@"sound_type_preference" 
-                                                   orSetDefault:0
+                                                   orSetDefault:4
                                                   usingDefaults:defaults];
         [self.targetEstimator setUpAudioFeedback:(AudioType)soundType];
         [self.targetEstimator start];

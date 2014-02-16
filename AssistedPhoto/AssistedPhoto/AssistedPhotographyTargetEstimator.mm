@@ -105,8 +105,10 @@ inline float frameScore(CGPoint target, CGPoint goal)
 //   [self.view addSubview:self.cameraView];
     [self.view insertSubview:self.cameraView atIndex:0];  
     
-    [self.targetLog appendString:[NSString stringWithFormat:@"# tracker %d %f %d\n", (int)TEMPLATE_MIDSIZE, 
+#ifdef LOG_EXPERIMENT_DATA
+    [self.targetLog appendString:[NSString stringWithFormat:@"# tracker %d %f %d\n", (int)TEMPLATE_MIDSIZE,
                                   self.cameraView.template_tracking_epsilon, self.cameraView.template_tracking_maxIter]];
+#endif
 
 }
 
@@ -215,10 +217,12 @@ inline float frameScore(CGPoint target, CGPoint goal)
     Declare successful run after the target reached the goal
  */
 -(void) declareSuccessfulRun
-{    
+{
+#ifdef LOG_EXPERIMENT_DATA
     NSConditionLock* lock = [[NSConditionLock alloc] initWithCondition:0];
     [lock lock];
     [lock unlockWithCondition:self.targetLog == nil];
+#endif
   
     UIImageView *imageView = [[UIImageView alloc] initWithImage:self.picture];
     imageView.backgroundColor = [UIColor blackColor];
@@ -336,8 +340,10 @@ inline float frameScore(CGPoint target, CGPoint goal)
     // ------------------------------------------------------------------------ //
     // Only log and display if we are not ready to start
     if (!self.startProcessing){
+#ifdef LOG_EXPERIMENT_DATA
         [self.frameLog saveFrame:sampleBuffer presentationTime:time appendStrToName:@"_aiming"];
-        [self.cameraView renderPixelBufferRef:pixelBufferRef]; 
+#endif
+        [self.cameraView renderPixelBufferRef:pixelBufferRef];
         return;
     }
     // ------------------------------------------------------------------------ //
@@ -345,10 +351,13 @@ inline float frameScore(CGPoint target, CGPoint goal)
 
     else if (saveFrame)
     {
-//        [self.frameLog skipFrameWithPresentationTime:time];
+#ifdef LOG_EXPERIMENT_DATA
         [self.frameLog saveFrame:sampleBuffer presentationTime:time];
+#else
+        [self.frameLog skipFrameWithPresentationTime:time];
+#endif
     }
-    else 
+    else
     {
         [self.frameLog skipFrameWithPresentationTime:time];
     }
@@ -381,10 +390,12 @@ inline float frameScore(CGPoint target, CGPoint goal)
             
         // save saliency image
         NSString *imageName = [NSString stringWithFormat:@"%@_saliency.jpeg", self.logIdentifier];
+#ifdef LOG_EXPERIMENT_DATA
         if (![self saveGrayImg:saliency width:w height:h withName:imageName])
         {
             NSLog(@"Could not save saliency image");
         }
+#endif
         
         see_uniformThresh(&saliency, w*h);
         
@@ -472,10 +483,12 @@ inline float frameScore(CGPoint target, CGPoint goal)
 //        // ------------------------------------------------------------------------ //
 
         imageName = [NSString stringWithFormat:@"%@_saliencyLabels.jpeg", self.logIdentifier];
+#ifdef LOG_EXPERIMENT_DATA
         if (![self saveGrayImg:labels width:w height:h withName:imageName])
         {
             NSLog(@"Could not save saliency image");
         }
+#endif
         
         free(saliency);
         free(labels);
@@ -483,7 +496,8 @@ inline float frameScore(CGPoint target, CGPoint goal)
         self.computeROI = NO;
         
         [self.cameraView discardResizeShader];
-                
+        
+#ifdef LOG_EXPERIMENT_DATA
         @autoreleasepool {
             NSString *strMeta = [NSString stringWithFormat:@"# saliency %07d %lu %lu %f %f \n# init_state %f %f %f %f %f %f\n", 
                                  self.frameLog.frameCount,
@@ -496,6 +510,7 @@ inline float frameScore(CGPoint target, CGPoint goal)
                 DebugLog(@"ERROR: Could not record target status in log!");
             }
         }
+#endif
         
         // ------------------------------------------------------------------------ //
         // Update audio feedback
@@ -565,8 +580,10 @@ inline float frameScore(CGPoint target, CGPoint goal)
                                 ((blur >= 0 && blur < (self.bestFrameBlur - 0.1)) || self.bestFrameBlur < 0)));
     if (isNewBestFrame && (trackingStatus  == TRACKING_OK))
     {
+#ifdef LOG_EXPERIMENT_DATA
         if (!saveFrame) // save in case we did not do it before
             [self.frameLog saveFrame:sampleBuffer appendStrToName:nil];
+#endif
         
         self.bestFrameBlur = blur;
         self.bestFrameScore = distance;
@@ -598,7 +615,7 @@ inline float frameScore(CGPoint target, CGPoint goal)
 //        NSLog(@"NEW BEST FRAME");
     }
     
-    
+#ifdef LOG_EXPERIMENT_DATA
     // update target log
     str = [NSString stringWithFormat:@"%07d %f %f %f %f %f %f %d %d %d\n", self.frameLog.frameCount, CMTimeGetSeconds(time), 
            self.targetMarkerView.targetPoint.x, self.targetMarkerView.targetPoint.y, 
@@ -607,6 +624,7 @@ inline float frameScore(CGPoint target, CGPoint goal)
     {
         DebugLog(@"ERROR: Could not record target status in log!");
     }
+#endif
     
     if (reachedGoal || (trackingStatus != TRACKING_OK) || (toc(self.processingTime) > MAX_PROCESSING_TIME))
     {                
@@ -707,6 +725,7 @@ inline float frameScore(CGPoint target, CGPoint goal)
 //        CGImageRelease(imageRef);
 //    }
     
+#ifdef LOG_EXPERIMENT_DATA
     // update target log
     NSString *str = [NSString stringWithFormat:@"# final_picture_gravity %f %f %f\n# final_picture_theta %f\n", 
                      gravity.x, gravity.y, gravity.z, theta];
@@ -714,6 +733,7 @@ inline float frameScore(CGPoint target, CGPoint goal)
     {
         DebugLog(@"ERROR: Could not record target status in log!");
     }
+#endif
         
     }
 }
@@ -725,10 +745,16 @@ inline float frameScore(CGPoint target, CGPoint goal)
     NSData *imageData = UIImageJPEGRepresentation(self.picture, 1.0f);
     NSString *imageName = [DLLog fullFilePath:[[NSString alloc] 
                                                initWithFormat:@"%@_finalPicture.jpg",self.logIdentifier]];
+#ifdef LOG_EXPERIMENT_DATA
     if (![imageData writeToFile:imageName atomically:NO])
     {
         NSLog(@"Could not save final image.");
     }
+#endif
+    
+#ifdef SAVE_PIC_CAM_ROLL
+    UIImageWriteToSavedPhotosAlbum(self.picture, nil, nil, nil);
+#endif
     
     return YES;
 }

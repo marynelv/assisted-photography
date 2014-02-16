@@ -48,7 +48,10 @@
 #define IMAGE_WIDTH             640.0                           //!< back camera image width
 #define IMAGE_HEIGHT            480.0                           //!< back camera image height
 
-#define MIN_SEPARATION          10                      //\todo move to settings
+#define MIN_SEPARATION          10                              //\todo move to settings
+
+#define LOG_EXPERIMENT_DATA                                     // comment to log less data into app space
+#define SAVE_PIC_CAM_ROLL                                       // save final picture to camera roll?
 
 typedef struct ExponentialParams {
     Vector2 mean;

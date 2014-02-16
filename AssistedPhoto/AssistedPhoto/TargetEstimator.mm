@@ -215,6 +215,7 @@
     self.logIdentifier = [TargetEstimator commonLogIdentifier];
     self.done = NO;
     
+// NOTE: Uncomment if you'd like to log data to app space
     // find target, start logging and start estimating motion
     if (![self startLogging])
     {
