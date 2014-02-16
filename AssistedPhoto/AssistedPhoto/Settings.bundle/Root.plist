@@ -22,7 +22,7 @@
 			<key>Titles</key>
 			<array>
 				<string>Pinhole Camera (IMU)</string>
-				<string>Assisted Photo. (Optic Flow)</string>
+				<string>Assisted Photo. (Camera)</string>
 			</array>
 			<key>Values</key>
 			<array>
@@ -77,16 +77,6 @@
 				<string>2</string>
 				<string>3</string>
 			</array>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSToggleSwitchSpecifier</string>
-			<key>Title</key>
-			<string>Sound Vizualization</string>
-			<key>Key</key>
-			<string>sound_vizualization_preference</string>
-			<key>DefaultValue</key>
-			<false/>
 		</dict>
 	</array>
 	<key>StringsTable</key>

@@ -70,11 +70,6 @@
         [self.targetEstimator setUpAudioFeedback:(AudioType)soundType];
         [self.targetEstimator start];
         
-//        // sound visualization
-//        BOOL soundVisualization = [AMViewController loadBoolSetting:@"sound_vizualization_preference" 
-//                                                       orSetDefault:NO
-//                                                      usingDefaults:defaults];
-//        [self.targetEstimator.audioFeedback setVisualize:soundVisualization];
     }
 }
 
