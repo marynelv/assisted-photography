@@ -1,7 +1,9 @@
 Assisted Photography
 ====================
 
-This repository contains the assisted photography application of the RERC-APT lab at Carnegie Mellon University (http://www.rercapt.org). The code was developed for iOS6, and was updated to run on iOS7. After the update, the code was not tested for backward compatibility with iOS6, but it should compile for that target if settings are adjusted appropriately.
+This repository contains the assisted photography application of the RERC-APT lab at Carnegie Mellon University (http://www.rercapt.org). The goal of this work was to enable assisted photography for people who would normally have trouble taking a picture due to a visual impairment.
+
+The code was developed for iOS6, and was updated to run on iOS7. After the update, the code was not tested for backward compatibility with iOS6, but it should compile for that target if settings are adjusted appropriately.
 
 
 [Code organization]

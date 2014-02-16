@@ -17,11 +17,11 @@ In general, the application behaves as follows:
 
 NOTE: If the phone was held vertically, but slightly tilted, the application will automatically correct the extra rotation. 
 
-Full rationale of how the app works can be found in:
+More details about our interactive aiming phase can be found in:
 
 Marynel Vazquez, Aaron Steinfeld. "Helping visually impaired users properly aim a camera". Proceedings of the 14th international ACM SIGACCESS Conference on Computers and Accessibility, 2012
 
-More details about how the region of interest is estimated are in:
+Our region of interest approach is detailed in:
 
 Marynel Vazquez, Aaron Steinfeld. "An assisted photography method for street scenes". IEEE Workshop on Applications of Computer Vision (WACV), 2011.
 
